@@ -1,0 +1,145 @@
+@media (max-width: 1400px) {
+	.redesign-global-threat:before {
+	    right: -40.6%;
+	}
+}
+@media (max-width: 1199px) {
+    .redesign-global-threat header {
+    	background: transparent;
+    }
+    .redesign-global-threat header .container, .redesign-global-threat .hero-sec .container, .redesign-global-threat .global-threat-report .container {
+		max-width: 912px;
+	}
+	.redesign-global-threat .hero-sec #HeroTitle {
+		max-width: 443px;
+		font-size: 18px;
+		line-height: 25.2px;
+	}
+	.redesign-global-threat .hero-sec #HeroSubTitle {
+		font-size: 42px;
+	    line-height: 100%;
+	    max-width: 504px;
+	}
+	.redesign-global-threat .global-threat-report {
+	    padding-top: 59px;
+    	padding-bottom: 20px;
+	}
+	.redesign-global-threat .global-threat-report:before {
+		left: -35px;
+	    top: -32px;
+	    z-index: -1;
+	}
+	.redesign-global-threat .global-threat-report .container:before {
+	    left: 52.1%;
+	    top: -311px;
+	    width: 543px;
+	    height: 448px;
+	    max-width: 100%;
+	}
+	.redesign-global-threat .global-threat-report .book-highlights .book-highlights-sub {
+		max-width: 407px;
+	}
+	.redesign-global-threat .gtr-mobile-version .book-highlights h3.book-mobile-title {
+	    display: none;
+	}
+	.redesign-global-threat .global-threat-report .book-highlights ul li h6 {
+		margin-bottom: 10px;
+	}
+	.redesign-global-threat .global-threat-report .book-highlights ul li p {
+	    margin-bottom: 35px;
+	}
+	.redesign-global-threat .logo-section {
+	    padding-top: 20px;
+	}
+	.redesign-global-threat .logo-section #Slider_Title {
+		font-size: 20px;
+	    line-height: 25px;
+	    max-width: 588px;
+	}
+	.redesign-global-threat .companies-section .slider_wrapper {
+	    margin-top: 100px;
+	}
+}
+@media (max-width: 991px) {
+    .redesign-global-threat:before {
+        right: -65.6%;
+        z-index: 0;
+    }
+	.redesign-global-threat .hero-sec .left-part {
+	    padding-top: 23px !important;
+	} 
+    .redesign-global-threat .hero-sec #HeroTitle {
+        margin-bottom: 32px;
+    }
+    .redesign-global-threat .hero-sec #HeroSubTitle {
+        font-size: 48px;
+        line-height: 100%;
+        max-width: 600px;
+        margin-bottom: 45px;
+    }
+    .redesign-global-threat .global-threat-report {
+        padding-top: 30px;
+        padding-bottom: 24px;
+    }
+    .redesign-global-threat .global-threat-report:before {
+        left: -35px;
+        top: auto;
+        bottom: -273px;
+    }
+    .redesign-global-threat .global-threat-report .book-highlights {
+        padding-top: 0;
+        flex-direction: column-reverse;
+    }
+    .redesign-global-threat .global-threat-report .book-highlights .book-highlights-sub {
+        margin-top: 61px;
+        text-align: center;
+        max-width: 660px;
+    }
+    .redesign-global-threat .global-threat-report .book-highlights ul li p {
+        margin-bottom: 35px;
+    }
+    .global-threat-report .book-highlights .mobile-img img {
+        max-width: 543px;
+    }
+    .redesign-global-threat .logo-section {
+        padding-top: 20px;
+    }
+    .redesign-global-threat .logo-section #Slider_Title {
+        font-size: 20px;
+        line-height: 125%;
+        max-width: 590px;
+        letter-spacing: 0.055em;
+    }
+    .redesign-global-threat .companies-section .slider_wrapper {
+        margin-top: 98px;
+    }
+}
+@media (max-width: 767px) {
+    .redesign-global-threat .gtr-mobile-version header {
+        display: block  ;
+    }
+}
+@media (max-width: 800px) {
+    .redesign-global-threat:before {
+        right: -87.5%;
+    } 
+}
+
+
+
+
+
+/* IE Issue solve */
+@media screen and (min-width:1441px){
+    _:-ms-lang(x), body .hero-sec .row {
+        height:auto;
+    }
+}
+
+.redesign-global-threat .global-threat-report .book-highlights {
+    justify-content: flex-start !important;
+}
+
+.redesign-global-threat .global-threat-report:before {
+    z-index: -1;
+}
