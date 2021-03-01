@@ -1,0 +1,941 @@
+<style>
+.redesign-global-threat{
+	position: relative;
+    overflow-x: hidden;
+    display: block;
+}
+.redesign-global-threat:before{
+    position: absolute;
+    content: '';
+    width: 1011px;
+    height: 913px;
+    background-image: url('https://res.cloudinary.com/spiralyze/image/upload/v1613039340/CrowdStrike/105_Redesign_Global_Threat_Report/subtract-top-desktop.svg');
+    background-repeat: no-repeat;
+    z-index: 2;
+    pointer-events: none;
+    right: 0;
+}
+.redesign-global-threat header .container, .redesign-global-threat .hero-sec .container, .redesign-global-threat .global-threat-report .container{
+	max-width: 1230px;
+}
+.redesign-global-threat header{
+    position: inherit;
+    height: 100px;
+    padding: 43px 0px 0px;
+    z-index: 1;
+}
+.redesign-global-threat .full-page-design{
+	position: relative;
+	z-index: 3;
+	overflow-x: hidden;
+}
+.redesign-global-threat .hero-sec{
+	margin-top: 0;
+    background: none;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+.redesign-global-threat .hero-sec .left-part{
+	padding-top: 35px !important;
+}
+.redesign-global-threat .hero-sec .title-sec{
+    padding-left: 0;
+}
+.redesign-global-threat .hero-sec #HeroTitle{
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    font-family: 'Hass-GroteSque-Medium';
+    color: #FC0000;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+.redesign-global-threat .hero-sec #HeroSubTitle{
+	font-size: 56px;
+    line-height: 56px;
+    max-width: 643px;
+    font-family: 'TungstenRounded-light';
+    text-transform: uppercase;
+    color: #2F2F2F;
+    letter-spacing: 0.04em;
+    margin-bottom: 34px;
+}
+.redesign-global-threat .hero-sec .hero-cta{
+    display: inline-block;
+    min-width: 326px;
+    width: auto;
+    color: #FFF !important;    
+    -webkit-box-shadow: 0px 4px 12px rgb(0 0 0 / 12%);
+    box-shadow: 0px 4px 12px rgb(0 0 0 / 12%);
+    border-radius: 64px;
+    background: #FC0000;
+    border: 1.5px solid #FC0000;
+    font-size: 18px;
+    font-family: 'Karla';
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px;
+    margin-bottom: 0;
+    letter-spacing: 0.55px;
+    line-height: 21px;
+    text-align: center;
+}
+.redesign-global-threat .hero-sec .hero-cta:hover{
+	
+}
+.redesign-global-threat .hero-sec .hero-cta:focus{
+	outline: none;
+}
+.redesign-global-threat #HeroSubTitle span{
+	font-family: 'TungstenRounded-Medium';
+}
+.redesign-global-threat .hero-sec{
+	
+}
+.redesign-global-threat .hero-sec .row{
+	align-items: flex-start;
+    justify-content: left;
+    min-height: auto;
+}
+.redesign-global-threat .left-part-wrapper{
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+}
+.redesign-global-threat .right-part-wrapper{
+	display: none !important;
+}
+
+/*global-threat-report*/
+.redesign-global-threat .global-threat-report{
+    background: none;
+    padding-top: 60px;
+    padding-bottom: 61px;
+    height: auto;
+    position: relative;
+}
+.redesign-global-threat .global-threat-report:before{
+    position: absolute;
+    content: '';
+    width: 684px;
+    height: 624px;
+    background-image: url(https://res.cloudinary.com/spiralyze/image/upload/v1613049788/CrowdStrike/105_Redesign_Global_Threat_Report/subtract-left-desktop.svg);
+    background-repeat: no-repeat;
+    pointer-events: none;
+    left: 0;
+    top: -30px;
+}
+.redesign-global-threat .global-threat-report .container:before{
+    right: auto;
+    left: 48%;
+    background-image: url(https://res.cloudinary.com/spiralyze/image/upload/f_auto/CrowdStrike/105_Redesign_Global_Threat_Report/threat-report-book-new.png);
+    top: -320px;
+    width: 852px;
+    height: 702px;
+    max-width: 100%;
+    background-size: contain;
+}
+.redesign-global-threat .global-threat-report .book-highlights{
+    justify-content: left !important;
+}
+.global-threat-report .book-highlights .book-highlights-sub{
+	max-width: 526px;
+}
+.redesign-global-threat .global-threat-report .book-highlights ul{
+	max-width: 100%;
+}
+.redesign-global-threat .global-threat-report .book-highlights ul li{
+	padding-left: 0;
+}
+.redesign-global-threat .global-threat-report .book-highlights ul li h6{
+    color: #2F2F2F;
+    font-size: 18px;
+    line-height: 21.6px;
+    letter-spacing: 0.02em;
+    font-family: 'Hass-GroteSque-Medium';
+}
+.redesign-global-threat .global-threat-report .book-highlights ul li p{
+	font-size: 16px;
+    color: #666666;
+    line-height: 22.4px;
+    letter-spacing: 0.65px;
+    margin-bottom: 33px;
+}
+.redesign-global-threat .global-threat-report .book-highlights-sub h3,.redesign-global-threat .global-threat-report .book-highlights ul li:before{
+	display: none;
+}
+.redesign-global-threat .global-threat-report .book-highlights-sub #ReportPoints{
+	
+}
+
+/*logo-section*/
+.redesign-global-threat .logo-section{
+	
+}
+.redesign-global-threat .logo-section #Slider_Title{
+	font-size: 24px;
+	line-height: 30px;
+	color: #666666;
+	letter-spacing: 0.04em;
+	font-family: 'Hass-GroteSque-Light';
+    max-width: 866px;
+    margin: 0 auto;
+}
+.redesign-global-threat .logo-section #Slider_Title span{
+	font-family: 'Hass-GroteSque-Medium';
+}
+.redesign-global-threat .logo-section #Slider_Sub_Title{
+	display: none;
+}
+.redesign-global-threat .companies-section .slider_wrapper{
+	margin-top: 63px;
+}
+
+
+
+/*modal*/
+
+@font-face{
+    font-family: 'Neue Haas Display';
+    src: url("//res.cloudinary.com/spiralyze/raw/upload/v1598415505/CrowdStrike/fonts/font/NeueHaasDisplay-Light.eot");
+    src: url('//res.cloudinary.com/spiralyze/raw/upload/v1598415505/CrowdStrike/fonts/font/NeueHaasDisplay-Light.woff') format('woff'),
+    url('//res.cloudinary.com/spiralyze/raw/upload/v1598415505/CrowdStrike/fonts/font/NeueHaasDisplay-Light.ttf') format('truetype'),
+    url('//res.cloudinary.com/spiralyze/raw/upload/v1598415505/CrowdStrike/fonts/font/NeueHaasDisplay-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal
+}
+@font-face{
+    font-family: 'Neue Haas Display';
+    src: url("//res.cloudinary.com/spiralyze/raw/upload/v1598416046/CrowdStrike/fonts/font/NeueHaasDisplay-Bold.eot");
+    src: url('//res.cloudinary.com/spiralyze/raw/upload/v1598416046/CrowdStrike/fonts/font/NeueHaasDisplay-Bold.woff') format('woff'),
+    url('//res.cloudinary.com/spiralyze/raw/upload/v1598416046/CrowdStrike/fonts/font/NeueHaasDisplay-Bold.ttf') format('truetype'),
+    url('//res.cloudinary.com/spiralyze/raw/upload/v1598416046/CrowdStrike/fonts/font/NeueHaasDisplay-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal
+}
+@font-face {
+    font-family: 'Karla';
+    src: url("//go.crowdstrike.com/rs/281-OBQ-266/images/Karla.eot");
+    src: url("//go.crowdstrike.com/rs/281-OBQ-266/images/Karla.woff2") format("woff2"),
+    url("//go.crowdstrike.com/rs/281-OBQ-266/images/Karla.eot?#iefix") format("embedded-opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Tungsten';
+    src: url("//res.cloudinary.com/spiralyze/raw/upload/f_auto/CrowdStrike/fonts/Tungsten-Medium.eot");
+    src: url("//res.cloudinary.com/spiralyze/raw/upload/f_auto/CrowdStrike/fonts/Tungsten-Medium.woff") format("woff"),
+        url("//res.cloudinary.com/spiralyze/raw/upload/f_auto/CrowdStrike/fonts/Tungsten-Medium.ttf") format("truetype"),
+        url("//res.cloudinary.com/spiralyze/raw/upload/f_auto/CrowdStrike/fonts/Tungsten-Medium") format("svg"),
+        url("//res.cloudinary.com/spiralyze/raw/upload/f_auto/CrowdStrike/fonts/Tungsten-Medium.eot?#iefix") format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Tungsten Rounded';
+    src: url("//res.cloudinary.com/spiralyze/raw/upload/v1595921534/CrowdStrike/fonts/font/TungstenRnd-Book.eot");
+    src: url("//res.cloudinary.com/spiralyze/raw/upload/v1595921532/CrowdStrike/fonts/font/TungstenRnd-Book.woff") format("woff"),
+        url("//res.cloudinary.com/spiralyze/raw/upload/v1595921533/CrowdStrike/fonts/font/TungstenRnd-Book.ttf") format("truetype"),
+        url('//res.cloudinary.com/spiralyze/raw/upload/v1599031960/CrowdStrike/fonts/font/TungstenRnd-Book.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Outer */
+html.popupShown,
+html.popupShown body.redesign-global-threat{
+    overflow: hidden !important;
+}
+.redesign-global-threat .form_popup {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*visibility: hidden;*/
+    background: rgba(37, 37, 37, 0.6);
+    backdrop-filter: blur(7px);
+    overflow-y: auto;
+    display: none;
+}
+.redesign-global-threat .modal_overlay {
+    background: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+/* Close Button */
+.redesign-global-threat .form_popup-close {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    line-height: 100%;
+    border-radius: 1000px;
+    width: 14px;
+    color: #414142;
+    transition: ease 0.25s all;
+    top: 23px;
+    right: 23px;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+    padding-top: 4px;
+    z-index: 4;
+}
+.redesign-global-threat .form_popup-close img{
+    width: 100%;
+    height: auto;
+}
+.redesign-global-threat .form_popup-close:hover {
+    opacity: 0.5;
+}
+/* Inner */
+.redesign-global-threat .popup_container{
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    min-height: -webkit-calc(100vh - (70px * 2));
+    min-height: calc(100% - (70px * 2));
+    max-width: 1200px;
+    width: 100%;
+    z-index: 2;
+    margin: 70px auto;
+}
+.redesign-global-threat .popup_container:before {
+    content: '';
+    display: block;
+    height: -webkit-calc(100vh - (70px * 2));
+    height: calc(100vh - (70px * 2));
+}
+.redesign-global-threat .popup_content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 100%;
+    z-index: 3;
+    margin: 0 auto;
+}
+.redesign-global-threat .popup_content > div {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    min-height: 522px;
+    max-width: 50%;
+    width: 100%;
+    -webkit-backdrop-filter: blur(32px);
+    backdrop-filter: blur(32px);
+}
+/* loader */
+.redesign-global-threat .loader {
+    margin: 100px auto;
+    overflow-x: hidden;
+}
+.redesign-global-threat .loader p {
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.redesign-global-threat .modal_left_content {
+    background: rgba(252, 0, 0, 0.64);
+    padding: 0 64px;
+}
+.redesign-global-threat .global-threat-Modal-title {
+    font-family: 'Neue Haas Display','Arial',sans-serif !important;
+    font-size: 36px;
+    line-height: 43px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: normal;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+    width: 100%;
+    padding: 0 0 23px 0;
+    margin: 0 0 19px 0;
+}
+.redesign-global-threat .global-threat-Modal-subtitle {
+    font-family: 'Neue Haas Display','Arial',sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: normal;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 10px !important;
+}
+.redesign-global-threat .modal_right_content {
+    background: rgba(255, 255, 255, 0.24);
+    padding: 0 56px;
+}
+.redesign-global-threat .modal_right_content .free-trial-banner {
+    width: 100%;
+}
+.redesign-global-threat .global-threat-Modal-formtitle {
+    font-family: 'Tungsten Rounded','Arial',sans-serif !important;
+    font-size: 64px;
+    line-height: 61px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.04em;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+.redesign-global-threat .modal_subtitle {
+    font-family: 'Karla','Arial',sans-serif;
+    font-size: 21px;
+    line-height: 25px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.36em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+
+/* Form CSS */
+.redesign-global-threat .form-wrapper .mktoForm {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 567px;
+    width: 100% !important;
+    margin: 0 auto;
+    visibility: hidden;
+    background-color: transparent;
+    padding: 0 !important;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoFormRow {
+    max-width: 50% !important;
+    width: 100% !important;
+    padding: 0 8px !important;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoGutter, .redesign-global-threat .form-wrapper .mktoForm .mktoOffset {
+    display: none;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoFormCol,
+.redesign-global-threat .form-wrapper .mktoForm .mktoFieldWrap {
+    width: 100% !important;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoFormCol {
+    border: none;
+    padding-top: 0;
+    margin-bottom: 16px !important;
+    margin-left: 0 !important;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoFieldWrap {
+    position: relative;
+    background-color: #FFFFFF;
+    border-left: 4px solid #C7C7C7;
+}
+.redesign-global-threat .form-wrapper .mktoForm .TandC_row {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    max-width: 100% !important;
+    margin-top: 5px !important;
+}
+.redesign-global-threat .form-wrapper .mktoForm .TandC_row .mktoFormCol,
+.redesign-global-threat .form-wrapper .mktoForm .TandC_row .mktoFieldWrap {
+    width: auto !important;
+}
+.redesign-global-threat .form-wrapper .mktoForm .TandC_row .mktoFormCol {
+    width: auto;
+    min-height: auto;
+    margin-bottom: 0 !important;
+}
+.redesign-global-threat .form-wrapper .mktoForm .TandC_row .mktoFieldWrap {
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+.redesign-global-threat .form-wrapper .mktoForm .TandC_row .mktoFieldWrap .mktoHtmlText {
+    width: 255px !important;
+}
+.redesign-global-threat .form-wrapper .mktoForm .TandC_row .mktoCheckboxList {
+    width: 19px !important;
+    padding: 0 !important;
+    margin-left: 13px;
+    margin-right: 4px;
+}
+.redesign-global-threat .form-wrapper .mktoForm .TandC_row label {
+    position: relative;
+    border: 1px solid #ffffff;
+    height: 14px;
+    margin: 0;
+    width: 14px;
+    border-radius: 2px;
+}
+.redesign-global-threat .form-wrapper .mktoForm .TandC_row .mktoValid label:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 4px;
+    height: 8px;
+    border: solid #ffffff;
+    border-width: 0 1px 1px 0;
+    margin-top: -1px;
+}
+.redesign-global-threat .form-wrapper .mktoForm .TandC_row .mktoInvalid label,
+.redesign-global-threat .form-wrapper .mktoForm .TandC_row .mktoFieldWrap input:focus + label {
+    border-color: #ec3525;
+}
+.redesign-global-threat .form-wrapper .mktoForm .TandC_row .mktoFieldWrap input {
+    height: inherit;
+    width: 0 !important;
+    height: 0 !important;
+    opacity: 0;
+}
+.redesign-global-threat .form-wrapper .mktoForm .TandC_row .TandC, .redesign-global-threat .form-wrapper .mktoForm .TandC_row .TandC a {
+    font-family: "karla",'Arial',sans-serif;
+    font-size: 13px;
+    line-height: 15px;
+    color: #ffffff !important;
+}
+.redesign-global-threat .form-wrapper .mktoForm .TandC_row .TandC a {
+    text-decoration: underline;
+}
+.redesign-global-threat .form-wrapper .mktoForm .TandC_row .TandC a:hover,
+.redesign-global-threat .form-wrapper .mktoForm .TandC_row .TandC a:focus:hover {
+    color: #ec3525 !important;
+    text-decoration: none;
+    outline: none;
+}
+.redesign-global-threat .form-wrapper .mktoForm .TandC_row .TandC a:focus {
+    color: #ffffff !important;
+    text-decoration: underline;
+    outline: none;
+}
+.redesign-global-threat .form-wrapper .mktoForm .TandC_row .mktoError {
+    top: 14px;
+    left: 9px;
+    max-width: inherit !important;
+    transform: inherit;
+    white-space: nowrap;
+}
+.redesign-global-threat .form-wrapper .mktoForm .TandC_row .mktoError .mktoErrorArrowWrap {
+    left: 3px;
+    transform: inherit;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoFormRow .focused.mktoFieldWrap {
+    color: #fc0000;
+    border-left-color: #fc0000;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoLabel .mktoAsterix {
+    display: none;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoLabel {
+    display: none;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoFormRow .mktoField {
+    font-family: 'Neue Haas Display','Arial',sans-serif !important;
+    font-size: 20px !important;
+    line-height: 24px !important;
+    font-weight: bold;
+    color: #fc0000 !important;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    text-align: left !important;
+    height: 56px !important;
+    width: 100% !important;
+    padding: 10px 16px !important;
+}
+
+/* Fixing issue on this page https://www.crowdstrike.com/endpoint-security-products/falcon-complete/ page */
+body.page-template #FirstName.mktoField,
+body.page-template #LastName.mktoField,
+body.page-template #Email.mktoField,
+body.page-template #Title.mktoField,
+body.page-template #Company.mktoField,
+body.page-template #Country.mktoField {
+    padding: 10px 16px !important;
+}
+/* Fixing issue on this page https://www.crowdstrike.com/endpoint-security-products/falcon-complete/*/
+
+.redesign-global-threat .form-wrapper .mktoForm .mktoFormRow .mktoField::-ms-clear {
+    display: none;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoFormRow .mktoField::-moz-placeholder {
+    opacity: 1;
+    color: #AAAAAA !important;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoFormRow .mktoField:-moz-placeholder {
+    opacity: 1;
+    color: #AAAAAA !important;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoFormRow .mktoField::-webkit-input-placeholder {
+    opacity: 1;
+    color: #AAAAAA !important;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoFormRow .mktoField:-ms-input-placeholder {
+    opacity: 1;
+    color: #AAAAAA !important;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoFormRow .mktoField:focus,
+.redesign-global-threat .form-wrapper .mktoForm .mktoFormRow input.mktoField:focus {
+    outline: none;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoFormRow #Phone.mktoField {
+    padding-left: 16px !important;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoFormRow select.mktoField {
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    background-image: none;
+    color: #aaaaaa !important;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoFormRow .focused select.mktoField,
+.redesign-global-threat .form-wrapper .mktoForm .mktoFormRow select.mktoField:focus {
+    color: #fc0000 !important;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoFormRow select.mktoField option {
+    font-family: 'Neue Haas Display','Arial',sans-serif !important;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #aaaaaa !important;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoFormRow select.mktoField::-ms-expand {
+    display: none;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoFormRow select.mktoField::-ms-value {
+    background: transparent;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoFormRow .focused select.mktoField::-ms-value {
+    color: #fc0000 !important;
+} 
+.redesign-global-threat .form-wrapper .mktoForm .mktoFormRow .mktoField:-webkit-autofill,
+.redesign-global-threat .form-wrapper .mktoForm .mktoFormRow .mktoField:-webkit-autofill:hover, 
+.redesign-global-threat .form-wrapper .mktoForm .mktoFormRow .mktoField:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset!important;
+    transition: background-color 5000s ease-in-out 0s!important;
+    -webkit-text-fill-color: #fc0000 !important;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoFormRow .mktoField:-webkit-autofill::first-line {
+    font-family: 'Neue Haas Display','Arial',sans-serif !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoButtonRow {
+    width: 100%;
+    padding: 0 10px;
+    margin-top: 24px !important;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoButtonRow .mktoButtonWrap {
+    margin: 0 auto !important;
+    display: block;
+    text-align: center;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoButton {
+    font-family: 'Neue Haas Display','Arial',sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+    letter-spacing: normal;
+    color: #fff;
+    border-radius: 64px;
+    background-color: #fc0000;
+    background: #fc0000;
+    border: none;
+    min-height: 56px;
+    min-width: 228px;
+    text-transform: inherit;
+    transition: all 0.3s ease-in-out 0s;
+    margin: 0 auto !important;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoButton:hover,
+.redesign-global-threat .form-wrapper .mktoForm .mktoButton:focus {
+    opacity: 0.7;
+    outline: none;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoError {
+    left: 50%;
+    right: inherit !important;
+    transform: translateX(-50%);
+    top: 100%;
+    bottom: 0 !important;
+    width: 100%;
+    text-align: center;
+    margin-top: -2px;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoError .mktoErrorMsg {
+    font-family: 'Neue Haas Display','Arial',sans-serif !important;
+    font-size: 13px;
+    line-height: 16px;
+    background-image: none !important;
+    border: none;
+    text-shadow: none;
+    border-radius: 4px;
+    box-shadow: none;
+    background: #ec3525 !important;
+    width: auto;
+    max-width: inherit;
+    display: inline-block;
+    text-align: left;
+    padding: 8px;
+    margin-top: 8px;
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoError .mktoErrorArrowWrap {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.redesign-global-threat .form-wrapper .mktoForm .mktoError .mktoErrorArrow {
+    border: none;
+}
+.form_popup .no_credit {
+    font-family: 'Karla','Arial',sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: normal;
+    font-weight: normal;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 10px !important;
+    margin-bottom: 4px !important;
+    visibility: hidden;
+}
+
+/* Browser hack for blurr issue */
+/* Only Mozilla */
+@-moz-document url-prefix() {
+    .redesign-global-threat .modal_left_content {
+        background: rgba(252, 0, 0, 0.96) !important;
+    }
+    .redesign-global-threat .modal_right_content {
+        background: rgba(255, 255, 255, 0.95) !important;
+    }
+    .redesign-global-threat .global-threat-Modal-formtitle {
+        color: #2F2F2F;
+    }
+    .redesign-global-threat .modal_subtitle {
+        color: #FC0000;
+    }
+    .redesign-global-threat .form-wrapper .mktoForm .TandC_row label,
+    .redesign-global-threat .form-wrapper .mktoForm .TandC_row .mktoValid label:before {
+        border-color: #2F2F2F;
+    }
+    .redesign-global-threat .form-wrapper .mktoForm .TandC_row .TandC,
+    .redesign-global-threat .form-wrapper .mktoForm .TandC_row .TandC a,
+    .redesign-global-threat .form-wrapper .mktoForm .TandC_row .TandC a:focus,
+    .form_popup .no_credit,
+    .redesign-global-threat .loader p {
+        color: #2F2F2F !important;
+    }
+    .redesign-global-threat .form-wrapper .mktoForm .TandC_row .TandC a:hover {
+        color: #ec3525 !important;
+    }
+}
+
+/* Only IE 11 */
+_:-ms-fullscreen, :root .redesign-global-threat .modal_left_content {
+    background: rgba(252, 0, 0, 0.96) !important;
+}
+_:-ms-fullscreen, :root .redesign-global-threat .modal_right_content {
+    background: rgba(255, 255, 255, 0.95) !important;
+}
+_:-ms-fullscreen, :root .redesign-global-threat .global-threat-Modal-formtitle {
+    color: #2F2F2F;
+}
+_:-ms-fullscreen, :root .redesign-global-threat .modal_subtitle {
+    color: #FC0000;
+}
+_:-ms-fullscreen, :root .redesign-global-threat .form-wrapper .mktoForm .TandC_row label,
+_:-ms-fullscreen, :root .redesign-global-threat .form-wrapper .mktoForm .TandC_row .mktoValid label:before {
+    border-color: #2F2F2F;
+}
+_:-ms-fullscreen, :root .redesign-global-threat .form-wrapper .mktoForm .TandC_row .TandC,
+_:-ms-fullscreen, :root .redesign-global-threat .form-wrapper .mktoForm .TandC_row .TandC a,
+_:-ms-fullscreen, :root .redesign-global-threat .form_popup .no_credit,
+_:-ms-fullscreen, :root .redesign-global-threat .loader p {
+    color: #2F2F2F !important;
+}
+_:-ms-fullscreen, :root .redesign-global-threat .form-wrapper .mktoForm .TandC_row .TandC a:hover {
+    color: #ec3525 !important;
+}
+/* Browser hack for blurr issue over */
+
+@media (min-width: 1200px) and (max-width: 1279px) {
+    .redesign-global-threat .popup_container {
+        max-width: 1140px;
+    }
+    .redesign-global-threat .modal_right_content {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .redesign-global-threat .popup_container {
+        max-width: 960px;
+    }
+    .redesign-global-threat .modal_left_content {
+        padding: 0 14px;
+    }
+    .redesign-global-threat .modal_right_content {
+        padding: 0 6px;
+    }
+}
+
+@media (max-width: 991px) {
+    .redesign-global-threat .popup_container {
+        max-width: 696px;
+    }
+    .redesign-global-threat .popup_content {
+        display: block;
+    }
+    .redesign-global-threat .popup_content > div {
+        display: inline-block;
+        min-height: inherit;
+        max-width: 100%;
+    }
+    .redesign-global-threat .modal_left_content {
+        padding: 43px 17px 31px;
+    }
+    .redesign-global-threat .global-threat-Modal-title {
+        display: block;
+        max-width: 472px;
+        margin: 0 auto 19px !important;
+    }
+    .redesign-global-threat .global-threat-Modal-subtitle {
+        display: block;
+        max-width: 472px;
+        margin: 0 auto 10px !important;
+    }
+    .redesign-global-threat .modal_right_content {
+        padding: 44px 17px;
+    }
+    .redesign-global-threat .form-wrapper .mktoForm {
+        max-width: 488px;
+    }
+}
+
+@media (max-width: 767px) {
+    .redesign-global-threat .form_popup-close{
+        top: 18px;
+        right: 20px
+    }
+    .redesign-global-threat .popup_container {
+        max-width: 540px;
+    }
+    .redesign-global-threat .form-wrapper .mktoForm, .redesign-global-threat .form-wrapper .mktoForm * {
+        padding: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .redesign-global-threat .popup_container {
+        max-width: 328px;
+    }
+    .redesign-global-threat .modal_left_content {
+        padding-top: 22px;
+        padding-bottom: 17px;
+    }
+    .redesign-global-threat .global-threat-Modal-title {
+        font-size: 24px;
+        line-height: 29px;
+        padding-bottom: 13px;
+        margin-bottom: 12px !important;
+    }
+    .redesign-global-threat .global-threat-Modal-subtitle {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .redesign-global-threat .global-threat-Modal-formtitle {
+        font-size: 48px;
+        line-height: 46px;
+        margin-bottom: 3px;
+    }
+    .redesign-global-threat .modal_subtitle {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 21px;
+    }
+    .redesign-global-threat .modal_right_content {
+        padding: 30px 10px 28px;
+    }
+    .redesign-global-threat .form-wrapper .mktoForm .mktoFormRow {
+        padding: 0 6px !important;
+    }
+    .redesign-global-threat .form-wrapper .mktoForm .mktoFormRow .mktoField {
+        font-size: 12px !important;
+        line-height: 14px !important;
+        height: 40px !important;
+        padding: 9px !important;
+    }
+    .redesign-global-threat .form-wrapper .mktoForm .mktoFormRow .mktoField:-webkit-autofill::first-line {
+        font-size: 12px !important;
+    }
+    .redesign-global-threat .form-wrapper .mktoForm .mktoFormRow #Phone.mktoField {
+        padding-left: 9px !important;
+    }
+    .redesign-global-threat .form-wrapper .mktoForm .TandC_row .mktoCheckboxList {
+        width: 14px !important;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 8px;
+    }
+    .redesign-global-threat .form-wrapper .mktoForm .TandC_row .mktoError {
+        left: -5px;
+    }
+    /* Fixing issue on this page https://www.crowdstrike.com/endpoint-security-products/falcon-complete/ page */
+    body.page-template #FirstName.mktoField,
+    body.page-template #LastName.mktoField,
+    body.page-template #Email.mktoField,
+    body.page-template #Title.mktoField,
+    body.page-template #Company.mktoField,
+    body.page-template #Country.mktoField {
+        padding: 9px !important;
+    }
+    /* Fixing issue on this page https://www.crowdstrike.com/endpoint-security-products/falcon-complete/*/
+}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px), only screen and (max-device-height: 480px) {
+    .redesign-global-threat .form-wrapper .mktoMobileShow .mktoForm, .redesign-global-threat .form-wrapper .mktoForm * {
+        padding: 0;
+    }
+}
+
+@media (max-width: 359px) {
+    .redesign-global-threat .form-wrapper .mktoForm .mktoFormRow {
+        padding: 0 5px !important;
+    }
+    .redesign-global-threat .popup_container {
+        max-width: 300px;
+    }
+}
+</style>    
