@@ -1,0 +1,621 @@
+body{
+	opacity: 0;
+}
+body.request_meeting_spz {
+	opacity: 1;
+}
+
+/*manage header start*/
+
+.request_meeting_spz #header {
+	height: 79px;
+	background: #f5f6f9;
+}
+.request_meeting_spz #header .container {
+	display: flex;
+    flex-direction: row-reverse;
+    max-width: 1259px;
+    height: 100%;
+    align-items: center;
+}
+.request_meeting_spz .header_greybox, .request_meeting_spz .header_logowrap {
+	width: 50%;
+}
+.request_meeting_spz .header_greybox {
+	background: transparent!important;
+}
+.request_meeting_spz .header_logowrap {
+ padding-top: 0!important;
+}
+
+@media (max-width: 991px){
+	.request_meeting_spz .header_greybox .header_innerwrap div {
+		margin-left: auto;
+	}
+}
+@media (max-width: 767px){
+	.request_meeting_spz .header_greybox{
+		padding: 0!important;
+	}
+	.request_meeting_spz .header_logowrap {
+		width: 60%;
+		padding: 0!important;
+	}
+	.request_meeting_spz .header_innerwrap {
+		padding: 0!important;
+	}
+	.request_meeting_spz .header_greybox .header_innerwrap div {
+		font-size: 10px!important;
+	}
+	.request_meeting_spz .header_logowrap img {
+		width: 178px!important;
+	}
+}
+
+/*manage header end*/
+
+.request_meeting_spz .main_content_wrapper {
+	position: relative;
+}
+.request_meeting_spz .main_content_wrapper::before {
+    content: ' ';
+    display: block;
+    background: url(//res.cloudinary.com/spiralyze/image/upload/f_auto/ServiceMax/ServiceMax%20Gartner%202020/background_hero.png) no-repeat right top;
+    background-size: 100% auto;
+    background-position: 259px -40px;
+    width: 100%;
+    max-width: 1069px;
+    position: absolute;
+    height: 678px;
+    margin-right: 0;
+    right: 0;
+    z-index: -20;
+    pointer-events: none;
+}
+.request_meeting_spz .lpeCElement.hero_image {
+	display: none;
+}
+.request_meeting_spz #outerWrapDiv {
+	display: none;
+}
+.request_meeting_spz .container {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.request_meeting_spz .hero_content_wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+    padding-top: 42px;
+    padding-right: 1px;
+}
+.request_meeting_spz .hero_left {
+	max-width: 529px;
+	width: 100%;
+}
+.request_meeting_spz .hero_title {
+	font: normal normal 900 36px/42px Interstate;
+	letter-spacing: 0px;
+	color: #000066;
+    margin-bottom: 21px;
+}
+.request_meeting_spz .hero_subtitle {
+	font: normal normal 300 22px/30px Interstate;
+	letter-spacing: 0px;
+	color: #31B700;
+	margin-top: 0;
+	margin-bottom: 27px;
+}
+.request_meeting_spz .description_para_1, .request_meeting_spz .description_para_2, .request_meeting_spz .description_para_3 {
+	font: normal normal 300 18px/23px Interstate;
+	letter-spacing: 0px;
+	color: #000000;
+	margin-top: 0;
+    margin-bottom: 23px;
+}
+.request_meeting_spz .description_para_3 a {
+	font: inherit;
+	color: inherit;
+}
+.request_meeting_spz .description_para_3 a:hover {
+	opacity: 0.8;
+}
+.request_meeting_spz .hero_right {
+	max-width: 573px;
+	width: 100%;
+	padding-top: 47px;
+	padding-bottom: 67px;
+}
+/* manage form */
+.request_meeting_spz .form_wrapper {
+	background: #F2F2F2;
+	padding: 51px 33px 50px;
+}
+.request_meeting_spz .form_title {
+	font: normal normal 900 36px/40px Interstate;
+	letter-spacing: 0px;
+	color: #000000;
+	text-transform: uppercase;
+	margin-top: 0;
+	text-align: center;
+    margin-bottom: 21px;
+}
+.request_meeting_spz .Standard_Form_-_EN {
+	max-width: 100%;
+}
+.request_meeting_spz .lpeCElement {
+	padding: 0!important;
+	position: inherit;
+}
+.request_meeting_spz .meeting_form form {
+	max-width: 509px;
+	margin-left: auto!important;
+	margin-right: auto;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100% !important;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.request_meeting_spz .meeting_form .mktoFormRow {
+	max-width: 250px!important;
+    position: relative;
+    float: none;
+}
+.request_meeting_spz .meeting_form form.mktoForm .mktoFormRow:nth-child(10), .request_meeting_spz #mktoForm_2123>div:nth-child(11), .request_meeting_spz .mktoForm .mktoFormRow:nth-child(12), .request_meeting_spz .mktoForm .mktoButtonRow {
+	max-width: 100%!important;
+}
+.request_meeting_spz .meeting_form form.mktoForm .mktoFormRow:nth-child(10) {
+	width: 100%!important;
+}
+.request_meeting_spz .meeting_form form.mktoForm .mktoFormRow:nth-child(12) {
+    margin-top: 4px;
+    margin-bottom: 14px;
+}
+.request_meeting_spz .meeting_form .mktoForm .mktoFormCol {
+	margin-bottom: 6px!important;
+}
+.request_meeting_spz .meeting_form .mktoForm .mktoFormRow .mktoField {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px!important;
+    color: #a9a9a9;
+    height: 45px;
+    width: 100%;
+    /*background-image: linear-gradient(#fff, #fff);*/
+    background-color: #ffffff;
+	border: 1px solid #A9A9A9;
+    padding: 10px;
+    border-radius: 0;
+}
+.request_meeting_spz .meeting_form .mktoForm .mktoFormRow .mktoField.mktoValid, .request_meeting_spz .meeting_form .mktoForm .mktoFormRow input.mktoInvalid {
+	font-style: normal;
+    color: #000000;
+    border: solid 1px #A9A9A9;
+}
+.request_meeting_spz .meeting_form .mktoForm .mktoFormRow .mktoField::-webkit-input-placeholder {
+    font: italic normal 300 12px/15px Interstate;
+	letter-spacing: 0px;
+	color: #A9A9A9;
+	opacity: 1;
+	text-transform: capitalize;
+}
+.request_meeting_spz .mktoForm select.mktoField {
+    background: url(//res.cloudinary.com/spiralyze/image/upload/f_auto/ServiceMax/Exit_Promoter/form-gray-downarrow.png) center right 10px no-repeat;
+}
+.request_meeting_spz .meeting_form .mktoForm .mktoFormRow select.mktoField {
+    font-style: italic;
+    padding-right: 32px;
+    background-size: 7px 6px;
+    background-position: center right 13px;
+} 
+.request_meeting_spz .meeting_form .mktoForm .mktoFormRow .mktoField:focus {
+    font-style: normal;
+    outline: none;
+    border: solid 1px #31b700;
+    color: #000000;
+}
+.request_meeting_spz .mktoForm .mktoFormRow:nth-child(12) .mktoHtmlText {
+	max-width: 354px!important;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.request_meeting_spz .mktoForm .mktoFormRow .mktoHtmlText span {
+	font-size: 12px!important;
+	line-height: 15px!important;
+	letter-spacing: 0px;
+	color: #000000;
+	text-align: center;
+}
+.request_meeting_spz .mktoForm .mktoFormRow .mktoHtmlText span u, .request_meeting_spz .mktoForm .mktoFormRow .mktoHtmlText span a {
+	color: #000066;
+}
+
+.request_meeting_spz .mktoForm .mktoButtonRow .mktoButton, .request_meeting_spz .mktoForm .mktoButtonWrap .mktoButton {
+	max-width: 383px!important;
+    width: 100%;
+    height: 54px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto !important;
+    margin-right: auto;
+    font: normal normal 900 15px/18px Interstate;
+	letter-spacing: 2.13px;
+	-webkit-box-shadow: 0px 3px 4px #8B8B8B5C!important;
+	        box-shadow: 0px 3px 4px #8B8B8B5C!important;
+}
+.mktoForm .mktoButtonWrap .mktoButton {
+	outline: none;
+}
+.request_meeting_spz .mktoForm .mktoButtonRow .mktoButton:hover, .request_meeting_spz .mktoForm .mktoButtonRow .mktoButton:focus, .request_meeting_spz .mktoForm .mktoButtonWrap .mktoButton:hover, .request_meeting_spz .mktoForm .mktoButtonWrap .mktoButton:focus {
+	outline: none;
+	background: #010766!important;
+	border-color: #010766!important;
+}
+/*.request_meeting_spz .meeting_form .mktoForm .mktoFormRow .is-error-visible .mktoField, .request_meeting_spz .meeting_form .mktoForm .mktoFormRow .is-error-visible .mktoField:focus, .request_meeting_spz .meeting_form .mktoForm .mktoFormRow .mktoError ~ .mktoField.mktoInvalid {*/
+/*	font-style: normal;*/
+/*    border: solid 1px #f5330b;*/
+/*}*/
+.request_meeting_spz .meeting_form .mktoForm .mktoFormRow .is-error-visible input.mktoField.mktoInvalid {
+	font-style: normal;
+    border: solid 1px #f5330b;
+}
+.request_meeting_spz .meeting_form .mktoForm .mktoFormRow select#State.mktoField.mktoInvalid {
+	border: solid 1px #f5330b;
+}
+.request_meeting_spz .meeting_form .mktoForm .mktoFormRow .is-error-visible select.mktoField.mktoInvalid {
+    background-image: url(//res.cloudinary.com/spiralyze/image/upload/f_auto/ServiceMax/Exit_Promoter/form-red-downarrow.png);
+    font-style: normal;
+    border: solid 1px #f5330b;
+}
+
+.request_meeting_spz #mktoForm_2123>div:nth-child(11)>div.mktoFieldDescriptor.mktoFormCol {
+	padding-top: 8px!important;
+}
+.request_meeting_spz .meeting_form .mktoForm .mktoFormRow input.mktoField[type="checkbox"] {
+	height: auto!important;
+	background-color: initial;
+    appearance: auto;
+    -webkit-appearance: checkbox;
+    padding: 7px 0!important;
+    width: 16px!important;
+}
+.request_meeting_spz .mktoForm .mktoRequiredField label.mktoLabel {
+    display: none !important;
+}
+.request_meeting_spz .meeting_form .mktoForm .mktoError {
+    top: 44px !important;
+    right: 0 !important;
+}
+.request_meeting_spz .meeting_form .mktoForm .mktoError .mktoErrorArrowWrap {
+	width: 14px;
+	height: 7px;
+	color: #f5330b;
+    left: calc(50% - 8px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none;	
+}
+.request_meeting_spz .meeting_form .mktoForm .mktoError .mktoErrorArrow {
+    border: none;
+}
+.request_meeting_spz .meeting_form .mktoForm .mktoError .mktoErrorMsg {
+	background-color: #f5330b;
+    background-image: none;
+    border: none;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    font-family: 'Muli'!important;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 16px;
+    letter-spacing: 0;
+    color: #fff;
+    text-shadow: none;
+    padding: 16px 20px 14px !important;
+}
+/* autofill */
+@-webkit-keyframes autofill {
+    to {
+        background: #ffffff;
+        color: #000000;
+    }
+}
+form input:-webkit-autofill,
+form input:-webkit-autofill:valid {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+@-webkit-keyframes selectautofill {
+    to {
+        background-color: #FFFFFF;
+        background-image: url("//res.cloudinary.com/spiralyze/image/upload/f_auto/ServiceMax/Exit_Promoter/form-black-downarrow.png");
+        background-repeat: no-repeat;
+        color: #000000;
+    }
+}
+.request_meeting_spz form select:-webkit-autofill,
+.request_meeting_spz form select:-webkit-autofill:valid {
+    -webkit-animation-name: selectautofill;
+    -webkit-animation-fill-mode: both;
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+select::-ms-expand {
+    display: none;
+}
+.request_meeting_spzz .meeting_form .mktoForm .mktoFormRow a{
+	color: #000066;
+	padding: 0;
+	text-decoration: underline;
+}
+.request_meeting_spz .meeting_form .mktoForm .mktoFormRow a:hover,
+.request_meeting_spz .meeting_form .mktoForm .mktoFormRow a:focus,
+.request_meeting_spz .meeting_form .mktoForm .mktoFormRow a:active{
+    color: #31b700;
+    outline: none;
+}
+.request_meeting_sp .mktoForm div,.mktoTemplateBox {
+	margin: 0 auto!important;
+}
+/* manage form end*/
+
+.request_meeting_spz .bottom_section {
+	background-color: #000066;
+	min-height: 477px;
+    margin-top: 185px;
+}
+
+/* image wrapper */
+
+.request_meeting_spz .img_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+} 
+.request_meeting_spz .img_wrapper .pic_wrap img {
+	max-width: 534px;
+	width: 100%;  
+    margin-top: -159px;
+}
+.request_meeting_spz .img_wrapper .arrow-contanier {
+    position: absolute!important;
+    right: 52.3%!important;
+    -webkit-transform: translateX(98.6%)!important;
+        -ms-transform: translateX(98.6%)!important;
+            transform: translateX(98.6%)!important;
+    top: -222px !important;
+}
+.request_meeting_spz .arrow_min_desk {
+	display: none;
+}
+.bottom_logo_section {
+	margin-top: 46px;
+}
+
+
+@media (max-width:1200px) {
+	.request_meeting_spz .main_content_wrapper::before {
+	    background: url(//res.cloudinary.com/spiralyze/image/upload/f_auto/ServiceMax/104:%20Test%20-%20Redesign%20Request%20a%20Meeting%20Page/background_mindesk.png) no-repeat right top;
+		background-size: 100% 100%;
+	    top: 185px;
+	}
+	.request_meeting_spz .container {
+		max-width: 964px;	
+	}
+	.request_meeting_spz .hero_content_wrapper {
+		padding-top: 21px;
+		padding-right: 0;
+	}
+	.request_meeting_spz .hero_left {
+		max-width: 452px;
+	}
+	.request_meeting_spz .hero_subtitle {
+		margin-bottom: 19px;
+	}
+	.request_meeting_spz .hero_right {
+    	max-width: 483px;
+	}
+	.request_meeting_spz  .form_wrapper {
+	    padding-left: 38px;
+	    padding-right: 38px;
+	}
+	.request_meeting_spz .meeting_form .mktoFormRow {
+		max-width: 200px!important;
+		width: 100%!important;
+	}
+	.request_meeting_spz .meeting_form .mktoForm .mktoFormRow select.mktoField {
+		background-position: center right 11px;
+	}
+	.request_meeting_spz .mktoForm .mktoButtonRow .mktoButton {
+    	max-width: 292px!important;
+	    height: 55px;
+	}
+	.request_meeting_spz .bottom_section {
+		margin-top: 191px;
+	    min-height: 392px;
+	}
+	.request_meeting_spz .img_wrapper .pic_wrap img {
+		max-width: 452px;
+		margin-top: -165px;
+	}
+	.request_meeting_spz .arrow_desk {
+		display: none;
+	}
+	.request_meeting_spz .arrow_min_desk {
+		display: block;
+	}
+	.request_meeting_spz .img_wrapper .arrow-contanier {
+	    right: 49.9%!important;
+	    -webkit-transform: translateX(99.3%)!important;
+	        -ms-transform: translateX(99.3%)!important;
+	            transform: translateX(99.3%)!important;
+	    top: -236px !important;
+	}
+}
+@media (max-width:991px) {
+	.request_meeting_spz .main_content_wrapper::before {
+	    background: url(//res.cloudinary.com/spiralyze/image/upload/f_auto/ServiceMax/104:%20Test%20-%20Redesign%20Request%20a%20Meeting%20Page/background_hero_tab.png) no-repeat right top;
+	        top: 0;
+    	background-size: 100%;
+	}
+	.request_meeting_spz .container {
+	    max-width: 658px;
+	}
+	.request_meeting_spz .hero_content_wrapper {
+	    -webkit-box-orient: vertical;
+	    -webkit-box-direction: normal;
+	        -ms-flex-direction: column;
+	            flex-direction: column;
+	    padding-top: 32px;
+	}
+	.request_meeting_spz .hero_left, .request_meeting_spz .hero_right{
+		max-width: 100%;
+	}
+	.request_meeting_spz .hero_subtitle {
+	    margin-bottom: 28px;
+	}
+	.request_meeting_spz .description_para_1, .request_meeting_spz .description_para_2, .request_meeting_spz .description_para_3 {
+		line-height: 21px;
+		margin-bottom: 21px;
+	}
+	.request_meeting_spz .hero_right {
+	    padding-top: 19px;
+	}
+	.request_meeting_spz .Standard_Form_-_EN.lpeCElement {
+		width: 100%!important;
+	}
+	.request_meeting_spz .form_wrapper {
+	    padding: 49px 34px 47px 33px;
+	}
+	.request_meeting_spz .form_title {
+		margin-bottom: 30px;
+	}
+	.request_meeting_spz .meeting_form form {
+		max-width: 100%;
+	}
+	.request_meeting_spz .meeting_form .mktoFormRow {
+		max-width: 288px!important;
+	}
+	.request_meeting_spz .mktoForm .mktoButtonRow .mktoButton {
+	    max-width: 467px!important;
+	    height: 54px;
+	}
+	.request_meeting_spz .bottom_section {
+	    margin-top: 290px;
+	    min-height: 540px;
+	}
+	.request_meeting_spz .img_wrapper .arrow-contanier {
+		display: none;
+	}
+	.request_meeting_spz .img_wrapper .pic_wrap img {
+	    max-width: 100%;
+	    margin-top: -250px;
+	}
+	.bottom_logo_section {
+	    margin-top: 35px;
+	}
+}
+@media (max-width:767px) {
+	.request_meeting_spz .main_content_wrapper::before {
+	    background: url(//res.cloudinary.com/spiralyze/image/upload/f_auto/ServiceMax/104:%20Test%20-%20Redesign%20Request%20a%20Meeting%20Page/background_hero_mob.png) no-repeat right top;
+	        top: 0;
+    	background-size: 100%;
+	}
+	.request_meeting_spz .hero_content_wrapper {
+	    padding-top: 22px;
+	}
+	.request_meeting_spz .hero_title {
+		font-size: 28px;
+		line-height: 36px;
+	}
+	.request_meeting_spz .hero_subtitle {
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 21px;
+	}
+	.request_meeting_spz .description_para_1, .request_meeting_spz .description_para_2, .request_meeting_spz .description_para_3 {
+		font-size: 18px;
+		line-height: 24px;
+		margin-bottom: 24px;
+	}
+	.request_meeting_spz .hero_right {
+	    padding-top: 14px;
+	}
+	.request_meeting_spz .meeting_form form {
+	    max-width: 439px;
+	} 
+	.request_meeting_spz .form_wrapper {
+	    padding: 40px 25px;
+	}
+	.request_meeting_spz .form_title {
+		font-size: 24px;
+		line-height: 30px;
+		margin-bottom: 19px;
+	}
+	.request_meeting_spz .meeting_form .mktoFormRow {
+	    max-width: 100%!important;
+	}
+	.request_meeting_spz .meeting_form .mktoForm .mktoFormRow .mktoField {
+		padding: 13px!important;
+	}
+	.request_meeting_spz .meeting_form .mktoForm .mktoFormRow select.mktoField {
+	    background-position: center right 13px;
+	}
+	.request_meeting_spz .meeting_form form.mktoForm .mktoFormRow:nth-child(12) {
+	    margin-top: 8px;
+    	margin-bottom: 15px;
+	}
+	.request_meeting_spz .meeting_form .mktoForm .mktoFormCol {
+	    margin-bottom: 5px!important;
+	}
+	.request_meeting_spz .mktoForm .mktoButtonRow .mktoButton {
+		font-size: 13px;
+		line-height: 15px;
+		letter-spacing: 1.85px;
+	    max-width: 467px!important;
+	    height: 50px;
+	    letter-spacing: 0;
+	}
+	.request_meeting_spz .bottom_section {
+	    margin-top: 190px;
+	    min-height: 384px;
+	}
+	.request_meeting_spz .bottom_logo_section {
+		padding-bottom: 30px;
+	}
+	.request_meeting_spz .img_wrapper .pic_wrap img {
+	    margin-top: -150px;
+	}
+}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px), only screen and (max-device-height: 480px) {
+	.request_meeting_spz.mktoMobileShow .mktoForm .mktoFormRow .mktoField {
+	    padding: 10px!important;
+	}
+}
