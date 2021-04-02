@@ -1,0 +1,738 @@
+<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+<style>
+/*manage header start*/
+body {
+    opacity: 0;
+}
+body.loaded {
+    opacity: 1;
+}
+#header {
+	height: 79px;
+	background: #f5f6f9;
+}
+#header .container {
+	display: flex;
+    flex-direction: row-reverse;
+    max-width: 1259px;
+    height: 100%;
+    align-items: center;
+}
+.header_greybox, .header_logowrap {
+	width: 50%;
+}
+.header_greybox {
+	background: transparent!important;
+}
+.header_logowrap {
+ padding-top: 0!important;
+}
+
+@media (max-width: 991px){
+	.header_greybox .header_innerwrap div {
+		margin-left: auto;
+	}
+}
+@media (max-width: 767px){
+	.header_greybox{
+		padding: 0!important;
+	}
+	.header_logowrap {
+		width: 60%;
+		padding: 0!important;
+	}
+	.header_innerwrap {
+		padding: 0!important;
+	}
+	.header_greybox .header_innerwrap div {
+		font-size: 10px!important;
+	}
+	.header_logowrap img {
+		width: 178px!important;
+	}
+}
+
+/*manage header end*/
+
+.main_content_wrapper {
+	position: relative;
+}
+.main_content_wrapper::before {
+    content: ' ';
+    display: block;
+    background: url(//res.cloudinary.com/spiralyze/image/upload/f_auto/ServiceMax/ServiceMax%20Gartner%202020/background_hero.png) no-repeat right top;
+    background-size: 100% auto;
+    background-position: 259px -40px;
+    width: 100%;
+    max-width: 1069px;
+    position: absolute;
+    height: 678px;
+    margin-right: 0;
+    right: 0;
+    z-index: -20;
+    pointer-events: none;
+}
+.lpeCElement.hero_image {
+	display: none;
+}
+#outerWrapDiv {
+	display: none;
+}
+.container {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.hero_content_wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+    padding-top: 42px;
+    padding-right: 1px;
+}
+.hero_left {
+	max-width: 529px;
+	width: 100%;
+}
+.hero_title {
+	font: normal normal 900 36px/42px Interstate;
+	letter-spacing: 0px;
+	color: #000066;
+    margin-bottom: 21px;
+}
+.hero_subtitle {
+	font: normal normal 300 22px/30px Interstate;
+	letter-spacing: 0px;
+	color: #31B700;
+	margin-top: 0;
+	margin-bottom: 27px;
+}
+.description_para_1, .description_para_2, .description_para_3 {
+	font: normal normal 300 18px/23px Interstate;
+	letter-spacing: 0px;
+	color: #000000;
+	margin-top: 0;
+    margin-bottom: 23px;
+}
+.description_para_3 a {
+	font: inherit;
+	color: inherit;
+}
+.description_para_3 a:hover {
+	opacity: 0.8;
+}
+.hero_right {
+	max-width: 573px;
+	width: 100%;
+	padding-top: 47px;
+	padding-bottom: 67px;
+}
+/* manage form */
+.form_wrapper {
+	background: #F2F2F2;
+	padding: 51px 33px 50px;
+}
+.form_title {
+	font: normal normal 900 36px/40px Interstate;
+	letter-spacing: 0px;
+	color: #000000;
+	text-transform: uppercase;
+	margin-top: 0;
+	text-align: center;
+    margin-bottom: 21px;
+}
+.Standard_Form_-_EN {
+	max-width: 100%;
+}
+.lpeCElement {
+	padding: 0!important;
+	position: inherit;
+}
+.meeting_form form {
+	max-width: 509px;
+	margin-left: auto!important;
+	margin-right: auto;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100% !important;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.meeting_form .mktoFormRow {
+	max-width: 250px!important;
+    position: relative;
+    float: none;
+}
+.meeting_form form.mktoForm .mktoFormRow:nth-child(10), #mktoForm_2123>div:nth-child(11), .mktoForm .mktoFormRow:nth-child(12), .mktoForm .mktoButtonRow {
+	max-width: 100%!important;
+}
+.meeting_form form.mktoForm .mktoFormRow:nth-child(10) {
+	width: 100%!important;
+}
+.meeting_form form.mktoForm .mktoFormRow:nth-child(12) {
+    margin-top: 4px;
+    margin-bottom: 14px;
+}
+.meeting_form .mktoForm .mktoFormCol {
+	margin-bottom: 6px!important;
+}
+.meeting_form .mktoForm .mktoFormRow .mktoField {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px!important;
+    color: #a9a9a9;
+    height: 45px;
+    width: 100%;
+    background-color: #ffffff;
+	border: 1px solid #A9A9A9;
+    padding: 10px!important;
+    border-radius: 0;
+}
+.meeting_form .mktoForm .mktoFormRow input.mktoField {
+    background-image: linear-gradient(#fff, #fff);
+}
+.meeting_form .mktoForm .mktoFormRow .mktoField.mktoValid, .meeting_form .mktoForm .mktoFormRow input.mktoInvalid {
+	font-style: normal;
+    color: #000000;
+    border: solid 1px #A9A9A9;
+}
+.meeting_form .mktoForm .mktoFormRow .mktoField::-webkit-input-placeholder {
+    font: italic normal 300 12px/15px Interstate;
+	letter-spacing: 0px;
+	color: #A9A9A9;
+	opacity: 1;
+	text-transform: capitalize;
+}
+.mktoForm select.mktoField {
+    background: url(//res.cloudinary.com/spiralyze/image/upload/f_auto/ServiceMax/Exit_Promoter/form-gray-downarrow.png) center right 10px no-repeat;
+}
+.meeting_form .mktoForm .mktoFormRow select.mktoField {
+    font-style: italic;
+    padding-right: 32px;
+    background-size: 7px 6px;
+    background-position: center right 13px;
+} 
+.meeting_form .mktoForm .mktoFormRow .mktoField:focus {
+    font-style: normal;
+    outline: none;
+    border: solid 1px #31b700;
+    color: #000000;
+}
+.mktoForm .mktoFormRow:nth-child(12) .mktoHtmlText {
+	max-width: 354px!important;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.mktoForm .mktoFormRow .mktoHtmlText span {
+	font-size: 12px!important;
+	line-height: 15px!important;
+	letter-spacing: 0px;
+	color: #000000;
+	text-align: center;
+}
+.mktoForm .mktoFormRow .mktoHtmlText span u, .mktoForm .mktoFormRow .mktoHtmlText span a {
+	color: #000066;
+}
+
+.mktoForm .mktoButtonRow .mktoButton, .mktoForm .mktoButtonWrap .mktoButton {
+	max-width: 383px!important;
+    width: 100%;
+    height: 54px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto !important;
+    margin-right: auto;
+    font: normal normal 900 15px/18px Interstate;
+	letter-spacing: 2.13px;
+	-webkit-box-shadow: 0px 3px 4px #8B8B8B5C!important;
+	        box-shadow: 0px 3px 4px #8B8B8B5C!important;
+}
+.mktoForm .mktoButtonWrap .mktoButton {
+	outline: none;
+}
+.mktoForm .mktoButtonRow .mktoButton:hover, .mktoForm .mktoButtonRow .mktoButton:focus, .mktoForm .mktoButtonWrap .mktoButton:hover, .mktoForm .mktoButtonWrap .mktoButton:focus {
+	outline: none;
+	background: #010766!important;
+	border-color: #010766!important;
+}
+/*.meeting_form .mktoForm .mktoFormRow .is-error-visible .mktoField, .meeting_form .mktoForm .mktoFormRow .is-error-visible .mktoField:focus, .meeting_form .mktoForm .mktoFormRow .mktoError ~ .mktoField.mktoInvalid {*/
+/*	font-style: normal;*/
+/*    border: solid 1px #f5330b;*/
+/*}*/
+.meeting_form .mktoForm .mktoFormRow .is-error-visible input.mktoField.mktoInvalid {
+	font-style: normal;
+    border: solid 1px #f5330b;
+}
+/* .meeting_form .mktoForm .mktoFormRow select#State.mktoField.mktoInvalid {
+	/* border: solid 1px #f5330b;/*
+} */
+.meeting_form .mktoForm .mktoFormRow .is-error-visible select.mktoField.mktoInvalid {
+    background-image: url(//res.cloudinary.com/spiralyze/image/upload/f_auto/ServiceMax/Exit_Promoter/form-red-downarrow.png);
+    font-style: normal;
+    border: solid 1px #f5330b;
+}
+
+#mktoForm_2123>div:nth-child(11)>div.mktoFieldDescriptor.mktoFormCol {
+	padding-top: 8px!important;
+}
+.meeting_form .mktoForm .mktoFormRow input.mktoField[type="checkbox"] {
+	height: auto!important;
+	background-color: initial;
+    appearance: auto;
+    -webkit-appearance: checkbox;
+    padding: 7px 0!important;
+    width: 16px!important;
+}
+.mktoForm .mktoRequiredField label.mktoLabel {
+    display: none !important;
+}
+.meeting_form .mktoForm .mktoError {
+    top: 44px !important;
+    right: 0 !important;
+}
+.meeting_form .mktoForm .mktoError .mktoErrorArrowWrap {
+	width: 14px;
+	height: 7px;
+	color: #f5330b;
+    left: calc(50% - 8px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none;	
+}
+.meeting_form .mktoForm .mktoError .mktoErrorArrow {
+    border: none;
+}
+.meeting_form .mktoForm .mktoError .mktoErrorMsg {
+	background-color: #f5330b;
+    background-image: none;
+    border: none;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    font-family: 'Muli'!important;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 16px;
+    letter-spacing: 0;
+    color: #fff;
+    text-shadow: none;
+    padding: 16px 20px 14px !important;
+}
+/* autofill */
+@-webkit-keyframes autofill {
+    to {
+        background: #ffffff;
+        color: #000000;
+    }
+}
+form input:-webkit-autofill,
+form input:-webkit-autofill:valid {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+@-webkit-keyframes selectautofill {
+    to {
+        background-color: #FFFFFF;
+        background-image: url("//res.cloudinary.com/spiralyze/image/upload/f_auto/ServiceMax/Exit_Promoter/form-black-downarrow.png");
+        background-repeat: no-repeat;
+        color: #000000;
+    }
+}
+form select:-webkit-autofill,
+form select:-webkit-autofill:valid {
+    -webkit-animation-name: selectautofill;
+    -webkit-animation-fill-mode: both;
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+select::-ms-expand {
+    display: none;
+}
+ .meeting_form .mktoForm .mktoFormRow a{
+	color: #000066;
+	padding: 0;
+	text-decoration: underline;
+}
+.meeting_form .mktoForm .mktoFormRow a:hover,
+.meeting_form .mktoForm .mktoFormRow a:focus,
+.meeting_form .mktoForm .mktoFormRow a:active{
+    color: #31b700;
+    outline: none;
+}
+.request_meeting_sp .mktoForm div,.mktoTemplateBox {
+	margin: 0 auto!important;
+}
+/* manage form end*/
+
+.bottom_section {
+	background-color: #000066;
+	min-height: 477px;
+    margin-top: 185px;
+}
+
+/* image wrapper */
+
+.img_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+} 
+.img_wrapper .pic_wrap img {
+	max-width: 534px;
+	width: 100%;  
+    margin-top: -159px;
+}
+.img_wrapper .arrow-contanier {
+    position: absolute!important;
+    right: 52.3%!important;
+    -webkit-transform: translateX(98.6%)!important;
+        -ms-transform: translateX(98.6%)!important;
+            transform: translateX(98.6%)!important;
+    top: -222px !important;
+}
+.arrow_min_desk {
+	display: none;
+}
+.bottom_logo_section {
+	margin-top: 46px;
+}
+
+
+@media (max-width:1200px) {
+	.main_content_wrapper::before {
+	    background: url(//res.cloudinary.com/spiralyze/image/upload/f_auto/ServiceMax/104:%20Test%20-%20Redesign%20Request%20a%20Meeting%20Page/background_mindesk.png) no-repeat right top;
+		background-size: 100% 100%;
+	    top: 185px;
+	}
+	.container {
+		max-width: 964px;	
+	}
+	.hero_content_wrapper {
+		padding-top: 21px;
+		padding-right: 0;
+	}
+	.hero_left {
+		max-width: 452px;
+	}
+	.hero_subtitle {
+		margin-bottom: 19px;
+	}
+	.hero_right {
+    	max-width: 483px;
+	}
+	 .form_wrapper {
+	    padding-left: 38px;
+	    padding-right: 38px;
+	}
+	.meeting_form .mktoFormRow {
+		max-width: 200px!important;
+		width: 100%!important;
+	}
+	.meeting_form .mktoForm .mktoFormRow select.mktoField {
+		background-position: center right 11px;
+	}
+	.mktoForm .mktoButtonRow .mktoButton {
+    	max-width: 292px!important;
+	    height: 55px;
+	}
+	.bottom_section {
+		margin-top: 191px;
+	    min-height: 392px;
+	}
+	.img_wrapper .pic_wrap img {
+		max-width: 452px;
+		margin-top: -165px;
+	}
+	.arrow_desk {
+		display: none;
+	}
+	.arrow_min_desk {
+		display: block;
+	}
+	.img_wrapper .arrow-contanier {
+	    right: 49.9%!important;
+	    -webkit-transform: translateX(99.3%)!important;
+	        -ms-transform: translateX(99.3%)!important;
+	            transform: translateX(99.3%)!important;
+	    top: -236px !important;
+	}
+}
+@media (max-width:991px) {
+	.main_content_wrapper::before {
+	    background: url(//res.cloudinary.com/spiralyze/image/upload/f_auto/ServiceMax/104:%20Test%20-%20Redesign%20Request%20a%20Meeting%20Page/background_hero_tab.png) no-repeat right top;
+	        top: 0;
+    	background-size: 100%;
+	}
+	.container {
+	    max-width: 658px;
+	}
+	.hero_content_wrapper {
+	    -webkit-box-orient: vertical;
+	    -webkit-box-direction: normal;
+	        -ms-flex-direction: column;
+	            flex-direction: column;
+	    padding-top: 32px;
+	}
+	.hero_left, .hero_right{
+		max-width: 100%;
+	}
+	.hero_subtitle {
+	    margin-bottom: 28px;
+	}
+	.description_para_1, .description_para_2, .description_para_3 {
+		line-height: 21px;
+		margin-bottom: 21px;
+	}
+	.hero_right {
+	    padding-top: 19px;
+	}
+	.Standard_Form_-_EN.lpeCElement {
+		width: 100%!important;
+	}
+	.form_wrapper {
+	    padding: 49px 34px 47px 33px;
+	}
+	.form_title {
+		margin-bottom: 30px;
+	}
+	.meeting_form form {
+		max-width: 100%;
+	}
+	.meeting_form .mktoFormRow {
+		max-width: 288px!important;
+	}
+	.mktoForm .mktoButtonRow .mktoButton {
+	    max-width: 467px!important;
+	    height: 54px;
+	}
+	.bottom_section {
+	    margin-top: 290px;
+	    min-height: 540px;
+	}
+	.img_wrapper .arrow-contanier {
+		display: none;
+	}
+	.img_wrapper .pic_wrap img {
+	    max-width: 100%;
+	    margin-top: -250px;
+	}
+	.bottom_logo_section {
+	    margin-top: 35px;
+	}
+}
+@media (max-width:767px) {
+	.main_content_wrapper::before {
+	    background: url(//res.cloudinary.com/spiralyze/image/upload/f_auto/ServiceMax/104:%20Test%20-%20Redesign%20Request%20a%20Meeting%20Page/background_hero_mob.png) no-repeat right top;
+	        top: 0;
+    	background-size: 100%;
+	}
+	.hero_content_wrapper {
+	    padding-top: 22px;
+	}
+	.hero_title {
+		font-size: 28px;
+		line-height: 36px;
+	}
+	.hero_subtitle {
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 21px;
+	}
+	.description_para_1, .description_para_2, .description_para_3 {
+		font-size: 18px;
+		line-height: 24px;
+		margin-bottom: 24px;
+	}
+	.hero_right {
+	    padding-top: 14px;
+	}
+	.meeting_form form {
+	    max-width: 439px;
+	} 
+	.form_wrapper {
+	    padding: 40px 25px;
+	}
+	.form_title {
+		font-size: 24px;
+		line-height: 30px;
+		margin-bottom: 19px;
+	}
+	.meeting_form .mktoFormRow {
+	    max-width: 100%!important;
+	}
+	.meeting_form .mktoForm .mktoFormRow .mktoField {
+		padding: 13px!important;
+	}
+	.meeting_form .mktoForm .mktoFormRow select.mktoField {
+	    background-position: center right 13px;
+	}
+	.meeting_form form.mktoForm .mktoFormRow:nth-child(12) {
+	    margin-top: 8px;
+    	margin-bottom: 15px;
+	}
+	.meeting_form .mktoForm .mktoFormCol {
+	    margin-bottom: 5px!important;
+	}
+	.mktoForm .mktoButtonRow .mktoButton {
+		font-size: 13px;
+		line-height: 15px;
+		letter-spacing: 1.85px;
+	    max-width: 467px!important;
+	    height: 50px;
+	    letter-spacing: 0;
+	}
+	.bottom_section {
+	    margin-top: 190px;
+	    min-height: 384px;
+	}
+	.bottom_logo_section {
+		padding-bottom: 30px;
+	}
+	.img_wrapper .pic_wrap img {
+	    margin-top: -150px;
+	}
+}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px), only screen and (max-device-height: 480px) {
+	mktoMobileShow .mktoForm .mktoFormRow .mktoField {
+	    padding: 10px!important;
+	}
+}
+
+</style>
+<script type="text/javascript">
+$('head title').text('Schedule a Meeting');
+    
+    var gettext = $('.Field_Service_Content').text();
+    gettext.replace(/\D/g, ",");
+    gettext = gettext.split('\n');
+    heroleft_tile = gettext[0];
+    heroleft_subtitle = gettext[1];
+    heroleft_description_para1 = gettext[3];
+    heroleft_description_para2 = gettext[5]  +' <br> ' + gettext[6] + ' <br> ' + gettext[7] + ' <br> ' + gettext[8];
+    heroleft_description_para3 = gettext[10];
+    var hd3_split =  heroleft_description_para3.split(/(\d+)/);
+    var call_num = hd3_split[1]+hd3_split[2]+hd3_split[3]+hd3_split[4]+hd3_split[5]+hd3_split[6]+hd3_split[7];
+    
+    var get_form_title = $('.Form_Caption .richTextSpan div:last-child> span> strong').text();
+    
+    $('<div class="main_content_wrapper">\
+	    <div class="hero_section">\
+	        <div class="container">\
+	            <div class="hero_content_wrapper">\
+	                <div class="hero_left">\
+	                    <h4 class="hero_title">' + heroleft_tile +'</h4>\
+	                    <p class="hero_subtitle"> ' + heroleft_subtitle + ' </p>\
+	                    <div class="hero_description">\
+	                        <p class="description_para_1"> ' + heroleft_description_para1 + ' </p>\
+	                        <p class="description_para_2"> ' + heroleft_description_para2 + ' </p>\
+	                        <p class="description_para_3"> ' + hd3_split[0] + ' <a href="tel:18007564960"> ' + call_num +' </a> ' + hd3_split[8] + ' </p>\
+	                    </div>\
+	                </div>\
+	                <div class="hero_right">\
+	                    <div class="form_wrapper meeting_form">\
+	                    	<h4 class="form_title"> ' + get_form_title + ' </h4>\
+	                    </div>\
+	                </div>\
+	            </div>\
+	        </div>\
+	    </div>\
+	</div>').insertAfter('.header_logowrap');
+	$('<div class="bottom_section">\
+		<div class="container">\
+		    <div class="img_wrapper">\
+			    <div class="pic_wrap">\
+			        <picture>\
+			            <source media="(max-width:767px)" srcset="//res.cloudinary.com/spiralyze/image/upload/f_auto/ServiceMax/104:%20Test%20-%20Redesign%20Request%20a%20Meeting%20Page/meeting_schedule_img_mob.png" data-class="imgSM">\
+			            <source media="(max-width:991px)" srcset="//res.cloudinary.com/spiralyze/image/upload/f_auto/ServiceMax/104:%20Test%20-%20Redesign%20Request%20a%20Meeting%20Page/meeting_schedule_img_tab.png" class="Gartner" data-class="imgMD">\
+			            <source media="(max-width:1024px)" srcset="//res.cloudinary.com/spiralyze/image/upload/f_auto/ServiceMax/104:%20Test%20-%20Redesign%20Request%20a%20Meeting%20Page/meeting_schedule_img_mindesk.png" class="Gartner" data-class="imgMD">\
+			            <img src="https://res.cloudinary.com/spiralyze/image/upload/f_auto/ServiceMax/104:%20Test%20-%20Redesign%20Request%20a%20Meeting%20Page/meeting_schedule_img_desk.png" class="Gartner" alt="meeting details" title="meeting details" loading="lazy">\
+			        </picture>\
+			    </div>\
+			    <div class="arrow-contanier">\
+			        <img src="//res.cloudinary.com/spiralyze/image/upload/v1611816945/ServiceMax/104:%20Test%20-%20Redesign%20Request%20a%20Meeting%20Page/green_arrow.svg" alt="arrow" title="arrow" class="arrow_desk">\
+			        <img src="//res.cloudinary.com/spiralyze/image/upload/v1611826880/ServiceMax/104:%20Test%20-%20Redesign%20Request%20a%20Meeting%20Page/green_arrow_1024.svg" alt="arrow" title="arrow" class="arrow_min_desk">\
+			    </div>\
+		    </div>\
+		    <div class="bottom_logo_section">\
+		        <picture>\
+		            <source media="(max-width:767px)" srcset="//res.cloudinary.com/spiralyze/image/upload/f_auto/ServiceMax/104:%20Test%20-%20Redesign%20Request%20a%20Meeting%20Page/bottom_logos_mob.png" data-class="imgSM">\
+		            <source media="(max-width:991px)" srcset="//res.cloudinary.com/spiralyze/image/upload/f_auto/ServiceMax/104:%20Test%20-%20Redesign%20Request%20a%20Meeting%20Page/bottom_logos_tab.png" class="Gartner" data-class="imgMD">\
+		            <source media="(max-width:1024px)" srcset="//res.cloudinary.com/spiralyze/image/upload/f_auto/ServiceMax/104:%20Test%20-%20Redesign%20Request%20a%20Meeting%20Page/bottom_logos_mindesk.png" class="Gartner" data-class="imgMD">\
+		            <img src="//res.cloudinary.com/spiralyze/image/upload/f_auto/ServiceMax/104:%20Test%20-%20Redesign%20Request%20a%20Meeting%20Page/bottom_logos_desk.png" class="logos" alt="company logos" title="company logos" loading="lazy">\
+		        </picture>\
+		    </div>\
+		</div>\
+	</div>').insertAfter('.hero_section')
+	
+    $('.Standard_Form_-_EN').insertAfter($('.form_title'));
+    $('body').prepend('<div class="header" id="header"><div class="container"></div></div>');
+    $('#header .container').append($('.header_greybox'));
+    $('#header .container').append($('.header_logowrap'));
+    MktoForms2.whenReady(function (form) {
+		var targetNodes = document.querySelectorAll('.mktoFieldWrap');
+        var config = { attributes: true, childList: true, subtree: true };
+        var callback = function (mutationsList, observer) {
+        	// update select state placeholder value
+            // $('#State option:first-child').text('Select Your State');
+            // $('#State option:first-child').val('');
+            // if ($('#State option:first-child').val() == ''){
+            // 	console.log($('#State option:first-child').val());
+            // 	$('#State option:first-child').text('Select Your State')
+            // }
+			document.getElementById('Country').onchange=function() {
+				var select=document.getElementById('State');
+				var opt=document.createElement('option');
+				opt.value='';
+				opt.innerHTML='Select your State';
+				select.prepend(opt);
+
+			}
+            
+            $('.mktoFormCol').each(function () {
+                if ($(this).find('.mktoError').length > 0 && $(this).find('.mktoError').attr('style').indexOf('none') == -1) {
+                    $(this).addClass('is-error-visible');
+                } else {
+                    $(this).removeClass('is-error-visible');
+                }
+                
+            });
+		}
+        if ($('#State').next().hasClass('.mktoError')) {
+			$('#State').parent().addClass('is-error-visible');
+		} else {
+			$('#State').parent().removeClass('is-error-visible');
+		}
+
+        var observer = new MutationObserver(callback);
+        for (var i = 0; i < targetNodes.length; i++) {
+            observer.observe(targetNodes[i], config);
+        }
+        $('body').addClass('loaded');
+        
+    });
+
+</script>

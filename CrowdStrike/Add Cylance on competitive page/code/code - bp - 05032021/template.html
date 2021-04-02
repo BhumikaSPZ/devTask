@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+    <style>
+        @media(min-width: 992px){
+            .hero-section{
+                max-height: 700px;
+                min-height: 700px;
+                height: 700px;
+            }
+        }
+
+        .form-wrapper .mktoForm .mktoTandCRow{
+    opacity: 0;
+}
+
+.Form-loaded .form-wrapper .mktoForm .mktoTandCRow{
+    opacity: 1;
+}
+@font-face {        
+    font-family: 'TungstenRounded-Light';
+    src: url(//res.cloudinary.com/spiralyze/raw/upload/v1595919850/CrowdStrike/fonts/font/TungstenRounded-Light.eot);
+    src: url(//res.cloudinary.com/spiralyze/raw/upload/v1595919641/CrowdStrike/fonts/font/TungstenRounded-Light.woff2) format("woff2"), 
+    url(//res.cloudinary.com/spiralyze/raw/upload/v1595919638/CrowdStrike/fonts/font/TungstenRounded-Light.woff) format("woff"), 
+    url(//res.cloudinary.com/spiralyze/raw/upload/v1595919637/CrowdStrike/fonts/font/TungstenRounded-Light.ttf) format("truetype");
+    font-style: 300;
+}
+@font-face {
+    font-family: 'TungstenRounded-Medium';
+    src: url(//res.cloudinary.com/spiralyze/raw/upload/v1595919119/CrowdStrike/fonts/font/TungstenRounded-Medium.eot);
+    src: url(https://res.cloudinary.com/spiralyze/raw/upload/v1595919085/CrowdStrike/fonts/font/TungstenRounded-Medium.woff2) format("woff2"), 
+    url(https://res.cloudinary.com/spiralyze/raw/upload/v1595919080/CrowdStrike/fonts/font/TungstenRounded-Medium.woff) format("woff"), 
+    url(https://res.cloudinary.com/spiralyze/raw/upload/v1595919082/CrowdStrike/fonts/font/TungstenRounded-Medium.ttf) format("truetype");
+    font-style: 600;
+}
+@font-face{
+    font-family: 'NeueHaasDisplay-Roman';
+    src: url('//res.cloudinary.com/spiralyze/raw/upload/v1595921536/CrowdStrike/fonts/font/NeueHaasDisplay.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HaasGrotDisp-65';
+    src: url('//res.cloudinary.com/spiralyze/raw/upload/v1599632698/CrowdStrike/fonts/font/NeueHaasGrotDisp-65Medium.eot');
+    src: url('//res.cloudinary.com/spiralyze/raw/upload/v1599632698/CrowdStrike/fonts/font/NeueHaasGrotDisp-65Medium.woff') format('woff');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HaasGrotDisp-75';
+    src: url('//res.cloudinary.com/spiralyze/raw/upload/v1602130469/CrowdStrike/fonts/New%20Fonts/NeueHaasDisplay-Bold.eot');
+    src: url('//res.cloudinary.com/spiralyze/raw/upload/v1602130469/CrowdStrike/fonts/New%20Fonts/NeueHaasDisplay-Bold.woff') format('woff');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HaasGrotDisp-95';
+    src: url('//res.cloudinary.com/spiralyze/raw/upload/v1602130469/CrowdStrike/fonts/New%20Fonts/NeueHaasDisplay-Black.eot');
+    src: url('//res.cloudinary.com/spiralyze/raw/upload/v1602130469/CrowdStrike/fonts/New%20Fonts/NeueHaasDisplay-Black.ttf')format('truetype');
+    src: url('//res.cloudinary.com/spiralyze/raw/upload/v1602130468/CrowdStrike/fonts/New%20Fonts/NeueHaasDisplay-Black.woff') format('woff');
+    font-style: normal;
+}
+@font-face {
+        font-family: 'Karla-Regular';
+        src: url("//res.cloudinary.com/spiralyze/raw/upload/v1595921535/CrowdStrike/fonts/font/Karla-Regular.woff") format("woff"), url("//res.cloudinary.com/spiralyze/raw/upload/v1595921534/CrowdStrike/fonts/font/Karla-Regular.ttf") format("truetype"), url("//go.crowdstrike.com/rs/281-OBQ-266/images/Karla-Regular.svg#Karla-Regular") format("svg");
+        font-weight: 400;
+        font-style: normal
+    }
+    
+    @font-face {
+        font-family: 'Karla';
+        src: url("//res.cloudinary.com/spiralyze/raw/upload/v1602130468/CrowdStrike/fonts/New%20Fonts/Karla.eot");
+        src: url("//res.cloudinary.com/spiralyze/raw/upload/v1602130468/CrowdStrike/fonts/New%20Fonts/Karla.woff2") format("woff2"), url("https://go.crowdstrike.com/rs/281-OBQ-266/images/Karla.eot?#iefix") format("embedded-opentype");
+        font-weight: 400;
+        font-style: normal
+    }
+</style>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//go.crowdstrike.com/rs/281-OBQ-266/images/competitive-hub.css" /> 
+<meta http-equiv="cache-control" content="public">
+<!-- GA Data Layer -->
+<script defer src="https://www.crowdstrike.com/wp-content/custom_js/marketo-dataLayer/english-datalayer.js" type="application/javascript"></script>
+<!-- End GA Data Layer -->
+
+<!-- Google Optimize anti-flicker snippet -->
+<style>.async-hide { opacity: 0 !important} </style>
+<script>if(!window.location.hostname.match(/marketodesigner/i)){
+(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',1900,
+{'GTM-N8HXDD2':true})}</script>
+
+<script async src="https://www.googleoptimize.com/optimize.js?id=GTM-N8HXDD2" onerror="dataLayer.hide.end && dataLayer.hide.end()"></script>
+   
+  
+<!-- Google Tag Manager -->
+<script defer>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5V5LPNC');</script>
+<!-- End Google Tag Manager -->
+
+
+<!-- Google Tag Manager -->
+<script> if (!window.location.hostname.match(/marketodesigner/i)) { 
+(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); 
+    var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; 
+    j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })
+    (window, document, 'script', 'dataLayer', 'GTM-W4TT8S'); } 
+    </script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Search Console -->
+<meta name="google-site-verification" content="_HmGLPsxTrMUdTUlMSHZDvm246FNdMQhAlkMpfI3Slc">
+<!-- End Google Search Console -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<title>CrowdStrike VS The Competition</title>
+<meta name="description" content="CrowdStrike | Not sure which endpoint security solution to choose? Discover the key differences between CrowdStrike and VMware Carbon Black.">
+
+ <!-- Google Search Console -->
+    <meta name="google-site-verification" content="_HmGLPsxTrMUdTUlMSHZDvm246FNdMQhAlkMpfI3Slc" />
+<link rel="shortcut icon" href="https://www.crowdstrike.com/wp-content/img/favicon/favicon.ico" type="image/x-icon">
+<link rel="icon" href="https://www.crowdstrike.com/wp-content/img/favicon/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" media="all" href="https://use.fontawesome.com/d5e5cdfb8c.css">
+<!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-v4-grid-only@1.0.0/dist/bootstrap-grid.min.css" />  -->
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  
+  <!-- OneTrust Cookies Consent Notice start for crowdstrike.com -->
+
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="bee15b7c-b632-450e-9003-9c8b60b3b978-test" ></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+<!-- OneTrust Cookies Consent Notice end for crowdstrike.com -->
+
+
+<!-- Form Button -->
+<meta class="mktoString" id="FormButtonText" mktoName="Form Button Text" default="Start Now">
+
+<script defer type='text/javascript'>
+    (function (c, h, a, f, i, e) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+        c[a].a = i; c[a].e = e; var g = h.createElement("script"); g.async = true; g.type = "text/javascript";
+        g.src = f + '?aid=' + i; var b = h.getElementsByTagName("script")[0]; b.parentNode.insertBefore(g, b);
+    })(window, document, "rtp", "//sjrtp-cdn.marketo.com/rtp-api/v1/rtp.js", "crowdstrike");
+    rtp('send', 'view');
+    rtp('get', 'campaign', true);
+</script>
+<!-- End of RTP tag -->
+  
+  
+
+<meta class="mktoBoolean" id="hero-section" mktoName="Hero Section" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+<meta class="mktoBoolean" id="compare" mktoName="Stop Breaches" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+<meta class="mktoBoolean" id="third-party" mktoName="What Makes Crowdstrike" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+<meta class="mktoBoolean" id="money-save" mktoName="Money Save" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+<meta class="mktoBoolean" id="yourself" mktoName="Yourself" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+
+<meta class="mktoBoolean" id="vs_1" mktoName="VMWARE show/hide" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+<meta class="mktoBoolean" id="vs_2" mktoName="Sophos show/hide" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+<meta class="mktoBoolean" id="vs_3" mktoName="Symantec show/hide" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+<meta class="mktoBoolean" id="vs_4" mktoName="Kaspersky show/hide" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+<meta class="mktoBoolean" id="vs_5" mktoName="BitDefender show/hide" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+<meta class="mktoBoolean" id="vs_6" mktoName="ESET show/hide" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show"> 
+<meta class="mktoBoolean" id="vs_7" mktoName="Cylance show/hide" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show"> 
+
+<!--Video Url-->
+<meta class="mktoString" id="hero-image-desktop" mktoName="Hero Image Desktop" default="https://go.crowdstrike.com/rs/281-OBQ-266/images/hub-hero.jpg">
+<meta class="mktoString" id="hero-image-tablet" mktoName="Hero Image Tablet" default="https://go.crowdstrike.com/rs/281-OBQ-266/images/hub-hero-tablet.jpg"> 
+<meta class="mktoString" id="hero-image-mobile" mktoName="Hero Image Mobile" default="https://go.crowdstrike.com/rs/281-OBQ-266/images/hub-hero-mobile.jpg"> 
+<meta class="mktoString" id="read-the-report-link" mktoName="Read Report Link" default="//www.crowdstrike.com/resources/reports/total-economic-impact-of-crowdstrike/">
+<meta class="mktoString" id="start-free-trial-link" mktoName="Start Free Trial Link" default="//go.crowdstrike.com/try-falcon-prevent.html">
+  
+<meta class="mktoString" id="real-time-visibility" mktoName="Real Time Visibility" default="//www.crowdstrike.com/endpoint-security-products/falcon-platform/">
+<meta class="mktoString" id="a-single-agent" mktoName="A Single Agent" default="//www.crowdstrike.com/endpoint-security-products/falcon-platform/">
+<meta class="mktoString" id="cloud-native" mktoName="Cloud Native" default="//www.crowdstrike.com/endpoint-security-products/falcon-platform/">
+<meta class="mktoString" id="modularity" mktoName="Modularity" default="//www.crowdstrike.com/endpoint-security-products/">
+<meta class="mktoString" id="world-class-intelligence" mktoName="World Class Intelligence" default="//www.crowdstrike.com/endpoint-security-products/falcon-x-threat-intelligence/">
+<meta class="mktoString" id="threat-hunting" mktoName="24/7 Threat Hunting" default="//www.crowdstrike.com/endpoint-security-products/falcon-overwatch-threat-hunting/">
+  
+<meta class="mktoString" id="read-the-report-text" mktoName="Read Report text" default="Read the Report">
+<meta class="mktoString" id="start-free-trial-text" mktoName="Start Free Text" default="Start Free Trial">
+
+<meta class="mktoString" id="vs_link_1" mktoName="VMWARE Link " default="">
+<meta class="mktoString" id="vs_link_2" mktoName="Sophos link" default="">
+<meta class="mktoString" id="vs_link_3" mktoName="Symantec link" default="">
+<meta class="mktoString" id="vs_link_4" mktoName="Kaspersky link" default="">
+<meta class="mktoString" id="vs_link_5" mktoName="BitDefender link" default="">
+<meta class="mktoString" id="vs_link_6" mktoName="ESET link" default="">
+<meta class="mktoString" id="vs_link_7" mktoName="Cylance link" default="//go.crowdstrike.com/crowdstrike-vs-cylance-try-falcon.html">
+
+<meta class="mktoString" id="twitterLink" mktoName="Twitter link" default="https://twitter.com/CrowdStrike"> 
+<meta class="mktoString" id="facebookLink" mktoName="Facebook link" default="https://www.facebook.com/CrowdStrike/">
+<meta class="mktoString" id="instagramLink" mktoName="instagram link" default="https://www.instagram.com/crowdstrike/?hl=en">
+<meta class="mktoString" id="linkedInLink" mktoName="LinkedIn link" default="https://www.linkedin.com/company/crowdstrike">
+<meta class="mktoString" id="youtubeLink" mktoName="Youtube link" default="http://www.youtube.com/user/CrowdStrike">
+
+  
+<meta class="mktoString" id="privacyLink" mktoName="Footer Privacy link" default="//crowdstrike.com/privacy-notice">
+<meta class="mktoString" id="contactUsLink" mktoName="Footer Contact Us link" default="//crowdstrike.com/contact-us">
+
+<meta class="mktoBoolean" id="showPrivacyNotice" mktoName="Show Hide Privacy Notice" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+
+<style>
+  
+  .hero-section::before{
+    background-image:url('${hero-image-desktop}');
+  }
+  
+  @media(max-width:991px){
+    .hero-section::before{
+    background-image:url('${hero-image-tablet}');
+  }
+  }
+  
+  @media(max-width:767px){
+    .hero-section::before{
+    background-image:url('${hero-image-mobile}');
+  }
+  }
+
+
+  /* insert privacy notice */
+     .privacy_notice {
+        display: ${showPrivacyNotice};
+    }
+    .privacy_notice {
+        font-size: 12px;
+        font-family: 'NeueHaasDisplay-Roman';
+        letter-spacing: 0.24px;
+        line-height: 1.21;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        max-width: 300px;
+        margin: 13px auto 21px;
+    }
+    .privacy_notice a {
+        font-size: 12px;
+        font-family: "Karla";
+        letter-spacing: 0.24px;
+        line-height: 1.21;
+        color: #fff;
+        text-align: center;
+        text-decoration: underline;
+        padding-left: 3px;
+    }
+    .privacy_notice a:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+    @media (min-width: 992px){
+        .hero-section {
+            max-height: 763px;
+            min-height: 762px;
+            height: 762px;
+        }
+    }
+    @media (max-width: 767px){
+        .hero-section {
+            padding-bottom: 25px;
+        }
+    }
+    @media (max-width: 360px) {
+        .hero-section {
+            padding-bottom: 1px;
+        }
+    }
+    @media (max-width: 325px) {
+        .privacy_notice {
+            margin: 13px auto 40px;
+        }
+    }
+</style>
+</head>
+  
+<body class="falcon_prevent gartner-review-page">
+   <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5V5LPNC&nojs=1"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+  
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?nojs=1&id=GTM-W4TT8S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <script src="https://use.fontawesome.com/d5e5cdfb8c.js"></script>
+    <script src="//app-ab01.marketo.com/js/forms2/js/forms2.min.js"></script>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="display: ${hero-section};">
+        <div class="container">
+            <div class="hero-sec-main">
+                <div class="background-section">
+                    <div class="left-side">
+                        <div class="header-logo">
+                            <a href="https://www.crowdstrike.com/" class="header-logo-text">
+                                <img src="//go.crowdstrike.com/rs/281-OBQ-266/images/WhiteLogoCS.svg" alt="CrowdStrike Logo">
+                            </a>
+                        </div>
+                        <div class="video-section-text">
+                            <h1 id="Leftside-heading" class="mktoText" mktoName="Left Side Heading">CrowdStrike</h1>
+                            <h3 id="Leftside-heading2" class="mktoText" mktoName="Left Side Heading2"><span>VS</span> THE COMPETITION</h3>
+                            <p id="Leftside-subheading2" class="mktoText" mktoName="Left Side sub Heading">Cut through the noise of an overcrowded cybersecurity industry and discover how CrowdStrike stacks up against other security solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-section" id="hero-section-form">
+                    <div class="right-side">
+                        <div class="free-trial-title text-center text-uppercase">
+                            <h2 id="formMainHeader" class="mktoText" mktoName="Form header">See How Crowdstrike Stacks Up</h2>
+                            <h4 id="formSubHeader" class="mktoText" mktoName="Form sub header">Try It Free</h4>
+                        </div>
+                        <div class="form-wrapper">
+                            <div class="mktoForm" id="trialformholder" mktoName="Form Holder"></div>
+                            <div style="display: none;" class="formbuttontext">${FormButtonText}</div>
+                            <!-- insert privacy notice start -->
+                            <p class="privacy_notice mktoText" id="privacy_notice" mktoName="Privacy Notice">
+                                Information submitted on this form may be associated with other information we have collected and used pursuant to our
+                                <a href="https://www.crowdstrike.com/privacy-notice/">Privacy Notice.</a>
+                            </p>
+                            <!-- insert privacy notice end -->
+                        </div>
+                        <script defer>
+                            function setCookie(name,value,days) {
+                                var expires = "";
+                                if (days) {
+                                    var date = new Date();
+                                    date.setTime(date.getTime() + (days*24*60*60*1000));
+                                    expires = "; expires=" + date.toUTCString();
+                                }
+                                document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+                            }
+                            (function ($) {
+                                var invalidDomains = ["@Aol.", "@seat.", "@Aussiemailmail.", "@merseymail.", "@muchomail.", "@pop.safe-mail.", "@vfemail.", "@click2mail.", "@e4ward.", "@gishpuppy.", "@guerrillamail.", "@mailinator .", "@spamgourmet.", "@spamex.", "@store.juno.", "@lycos.", "@TheFreeSite.", "@my.topicaplus.", "@findlaw.", "@keepandbeararms.", "@techemail.", "@incredimail.", "@en.speedy-mail-software.", "@mailpride.", "@mollymail.", "@pandaemail.sourceforge.", "@33MAIL.", "@freeola.", "@protonmail.", "@opera.", "@NoPeddlers.", "@nz11.", "@yandex.", "@zoho.", "@gmx.", "@tempr.email.", "@www.one.", "@tempinbox.", "@emailsensei.", "@emz.", "@fakeinbox.", "@filzmail.", "@greensloth.", "@hidemail.", "@trashmail.", "@jmail.ovh.", "@mail.ovh.", "@mailcatch.", "@mail-temporaire.", "@qip.ru.", "@maildrop.cc.", "@Lortemail.dk.", "@mytrashmail.", "@mailnesia.", "@mailnull.", "@no-spam.ws.", "@nervtmich.", "@notsharingmy.info.", "@nowmymail.", "@trashmail.", "@onewaymail.", "@otherinbox.", "@Safe-mail.", "@safersignup.", "@safersignup.", "@sharklasers.", "@shitmail.me.", "@sibmail.", "@sharpmail.co.uk.", "@spam4.me.", "@soodonims.", "@spamex.", "@temp-mail.", "@tempemail.", "@mytrashmail.", "@instantemailaddress.", "@trashmail.", "@yopmail.", "@yopmail.", "@wegwerfemail.", "@yopmail.", "@gmail.", "@hotmail.", "@yahoo.", "@outlook.", "@live.", "@ecologyfund.", "@Computermail.", "@.emailaccount.", "@emailchoice.", "@inbox.", "@swissmail.", "@mail.rediff.", "@i.aol.", "@UltimateEmail.", "@soltecsis.", "@meowmail.", "@apple.", "@aussiemail.au.", "@bigstring.", "@canada.", "@icqmail.", "@zilladog.", "@l8r.", "@futureme.", "@12free.co.", "@animail.", "@care2.", "@lavabit.", "@lpemail.", "@macgui.", "@webmail.co.", "@AsianAve.", "@burntmail.", "@fanmail.", "@thedoghousemail.", "@Address.", "@excite.", "@e-mol.", "@mail2web.", "@everyone.", "@About.", "@nativestar.", "@speedy-mail-software.", "@icloud.", "@me.", "@mac.", "@mail.", "@mochamail.", "@go.", "@prontomail.", "@hushmail."];
+
+                                MktoForms2.whenRendered(function (form){
+                                    setTimeout(function(){
+                                        $('body').addClass('Form-loaded');
+                                    },200);
+                                });
+    
+                                MktoForms2.whenReady(function (form) {
+                                    $('.hero-section .form-section .mktoForm .mktoFormRow #Company').on("click focus",function(){
+                                        $(this).removeAttr("autocomplete");
+                                    });
+                                    
+
+                                    $('.form-wrapper .mktoForm .TandC').closest('.mktoFormRow').addClass('mktoTandCRow');
+                                    $('.form-wrapper .mktoForm .mktoButton').text('Submit');
+                                    $('#Phone').attr('title','Phone Number');
+                                    $('#Country').attr('title','Country');
+                                    $('#Country option:first-child()').text('Country');
+
+
+                                    // for left border color change
+                                    $(".mktoForm .mktoField").focus(function () {
+                                        $(this).closest('.mktoFieldWrap').addClass("focused");
+                                    }).blur(function () {
+                                        if ($(this).val() == '' || $(this).val() == null || $(this).val() == '(___) ___-____') {
+                                            $(this).closest('.mktoFieldWrap').removeClass("focused");
+                                        } else if ($(this).val() != '' || $(this).val() != null) {
+                                            $(this).closest('.mktoFieldWrap').addClass("focused");
+                                        }
+                                    });
+
+                                    // For select text value
+                                    $('.form-wrapper .mktoForm .mktoFormRow select.mktoField').on("keyup change", function() {
+                                        var SelectedCountry = $('.form-wrapper .mktoForm .mktoFormRow select.mktoField option:selected').text();
+                                        $(this).siblings('label').text(SelectedCountry);
+                                        if ($(this).val() == '' || $(this).val() == null || $(this).val() == '(___) ___-____') {
+                                            $('.form-wrapper .mktoForm .mktoFormRow select.mktoField').siblings('label').text('Country');
+                                        }
+                                    });
+
+                                    $(window).on("resize", function () {
+                                        var SelectBoxwidth = $('.form-wrapper .mktoForm .mktoFormRow select.mktoField').width();
+                                        $('.form-wrapper .mktoForm .mktoFormRow .mktoLabel[for="Country"]').css('max-width',SelectBoxwidth);
+                                    }).resize();
+
+                                    $(".mktoForm .mktoFormRow label#LblCountry").each(function(){
+                                        var getPlaceholder = $(this).text().replace(':', '').replace('*', '');
+                                        $(this).text(getPlaceholder)
+                                    });
+
+                                    // Form visible
+                                    $('.form-wrapper .mktoForm').css('visibility','visible');
+
+                                    // Hidden fields val over
+                                    form.onValidate(function () {
+                                        var email = form.vals().Email;
+            
+                                        if (email) {
+                                            if (!isEmailValid(email)) {
+                                                form.submitable(false);
+                                                var emailElem = form.getFormElem().find("#Email");
+                                                form.showErrorMessage("Must be valid email. <span class='mktoErrorDetail'>example@yourdomain.com</span>", emailElem);
+                                            } else if (!isEmailGood(email)) {
+                                                form.submitable(false);
+                                                var emailElem = form.getFormElem().find("#Email");
+                                                form.showErrorMessage("Must be Business email.", emailElem);
+                                            } else {
+                                                form.submitable(true);
+                                            }
+                                        }
+                                    });
+                                    form.onSubmit(function () {
+                                        (window.dataLayer = window.dataLayer || []).push({
+                                            'event': 'page.formSubmit',
+                                            'page.formSubmit': {
+                                                'name': window.location.href
+                                            }
+                                        });
+                                    });
+
+                                    document.querySelector('.mktoForm button.mktoButton').innerHTML = $('.formbuttontext').text();
+
+                                    form.onSuccess(function (values, followUpUrl) {
+                                        if (form.getId() == 5554) {
+                                            var try_fp_firstname = $('.mktoForm #FirstName').val();
+                                            setCookie('try_fp_firstname', try_fp_firstname, 1);
+                                            var try_fp_lasttname = $('.mktoForm #LastName').val();
+                                            setCookie('try_fp_lasttname', try_fp_lasttname, 1);
+                                            var try_fp_email = $('.mktoForm #Email').val();
+                                            setCookie('try_fp_email', try_fp_email, 1);
+                                            var try_fp_phone = $('.mktoForm #Phone').val();
+                                            setCookie('try_fp_phone', try_fp_phone, 1);
+                                            setCookie('try_fp_submitted', true, 1);
+                                            window.location.href="https://go.crowdstrike.com/crowdstrike-vs-competition-try-falcon-thank-you.html";
+                                            return false;
+                                        }
+    
+                                        //Extra code, if it is there
+                                    });
+                                    $('.mktoForm .mktoField').each(function () {
+                                        if ($(this).attr('placeholder')) {
+                                            $(this).attr('placeholder', $(this).attr('placeholder').replace('*', ''));
+                                        }
+                                    });
+                                });
+                                function isEmailValid(email) {
+                                    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                                    return re.test(String(email).toLowerCase());
+                                }
+                                function isEmailGood(email) {
+                                    for (var i = 0; i < invalidDomains.length; i++) {
+                                        var domain = invalidDomains[i];
+                                        if (email.indexOf(domain) != -1) {
+                                            return false;
+                                        }
+                                    }
+                                    return true;
+                                }
+
+                                window.onpageshow = function(event) {
+                                    if (event.persisted) {
+                                        var formlist = document.querySelectorAll('form.mktoForm');
+                                        for (var i=0; i<formlist.length; i++ ){
+                                            formlist[i].reset();
+                                        }
+                                        document.querySelector('.mktoForm button.mktoButton').disabled = false;
+                                        document.querySelector('.mktoForm button.mktoButton').innerHTML = $('.formbuttontext').text();
+                                    }
+                                };
+
+                            })(jQuery);
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="compare" style="display: ${compare};">
+            <div class="container">
+                <h2 id="compare-heading" class="mktoText" mktoName="Compare Heading"><b>Compare</b> Endpoint Security Solutions</h2>
+                <hr class="red-line" />
+                <p id="compare-sub-heading" class="mktoText" mktoName="Compare Sub Heading">Evaluating one of these? Check out our side-by-side comparisons by clicking on each of them below.</p>
+                <div class="row">
+                    <div class="col-four vs_1" style="display: ${vs_1}">
+                        <a href="${vs_link_1}" target="_blank">
+                            <img id="crowdstrike-logo-1" class="mktoImg crowdstrike-logo" mktoName="Crowdstrike Logo 1" src="//go.crowdstrike.com/rs/281-OBQ-266/images/crowdstrike_logo.svg" alt="Crowdstrike">
+                            <h6>VS.</h6>
+                            <h5 class="mktoText" id="competitortext-1" mktoName="Competitor Text 1">VMWARE</h5>  
+                        </a>
+                    </div>
+
+                    <div class="col-four vs_2" style="display: ${vs_2}">
+                        <a href="${vs_link_2}" target="_blank">
+                            <img id="crowdstrike-logo-2" class="mktoImg crowdstrike-logo" mktoName="Crowdstrike Logo 2" src="//go.crowdstrike.com/rs/281-OBQ-266/images/crowdstrike_logo.svg" alt="Crowdstrike">
+                            <h6>VS.</h6>
+                            <h5 class="mktoText" id="competitortext-2" mktoName="Competitor Text 2">Sophos</h5>  
+                        </a>
+                    </div>
+
+                    <div class="col-four vs_3" style="display: ${vs_3}">
+                        <a href="${vs_link_3}" target="_blank">
+                            <img id="crowdstrike-logo-3" class="mktoImg crowdstrike-logo" mktoName="Crowdstrike Logo 3" src="//go.crowdstrike.com/rs/281-OBQ-266/images/crowdstrike_logo.svg" alt="Crowdstrike">
+                            <h6>VS.</h6>
+                            <h5 class="mktoText" id="competitortext-3" mktoName="Competitor Text 3">Symantec</h5>  
+                        </a>
+                    </div>
+
+                    <div class="col-four vs_4" style="display: ${vs_4}">
+                        <a href="${vs_link_4}" target="_blank">
+                            <img id="crowdstrike-logo-4" class="mktoImg crowdstrike-logo" mktoName="Crowdstrike Logo 4" src="//go.crowdstrike.com/rs/281-OBQ-266/images/crowdstrike_logo.svg" alt="Crowdstrike">
+                            <h6>VS.</h6>
+							<h5 class="mktoText" id="competitortext-4" mktoName="Competitor Text 4">Kaspersky </h5>  
+                      	</a>
+                    </div>
+
+                    <div class="col-four vs_5" style="display: ${vs_5}">
+                        <a href="${vs_link_5}" target="_blank">
+                            <img id="crowdstrike-logo-5" class="mktoImg crowdstrike-logo" mktoName="Crowdstrike Logo 5" src="//go.crowdstrike.com/rs/281-OBQ-266/images/crowdstrike_logo.svg" alt="Crowdstrike">
+                            <h6>VS.</h6>
+                          	<h5 class="mktoText" id="competitortext-5" mktoName="Competitor Text 5">BitDefender</h5>  
+                      </a>
+                    </div>
+
+                    <div class="col-four vs_6" style="display: ${vs_6}">
+                        <a href="${vs_link_6}" target="_blank">
+                            <img id="crowdstrike-logo-6" class="mktoImg crowdstrike-logo" mktoName="Crowdstrike Logo 6" src="//go.crowdstrike.com/rs/281-OBQ-266/images/crowdstrike_logo.svg" alt="Crowdstrike">
+                            <h6>VS.</h6>
+                          <h5 class="mktoText" id="competitortext-6" mktoName="Competitor Text 6">ESET</h5>  
+                      	</a>
+                    </div>
+
+                    <div class="col-four vs_7" style="display: ${vs_7}">
+                        <a href="${vs_link_7}" target="_blank">
+                            <img id="crowdstrike-logo-7" class="mktoImg crowdstrike-logo" mktoName="Crowdstrike Logo 7" src="//go.crowdstrike.com/rs/281-OBQ-266/images/crowdstrike_logo.svg" alt="Crowdstrike">
+                            <h6>VS.</h6>
+                          <h5 class="mktoText" id="competitortext-7" mktoName="Competitor Text 7">Cylance</h5>  
+                      	</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="third-party" style="display: ${third-party}">
+            <div class="container">
+                <h2 id="competition-heading" class="mktoText" mktoName="Competition Heading">Why Does CrowdStrike Beat the Competition?</h2>
+                <div class="row">
+                    <div class="col-6">
+                        <img id="competition-img-1" class="mktoImg" mktoName="Competition Image 1" src="https://go.crowdstrike.com/rs/281-OBQ-266/images/real-time-visibility.png" alt="1. Real Time Visibility">
+                        <h3 id="competition-heading-1" class="mktoText" mktoName="Competition Heading 1">1. Real Time Visibility</h3>
+                        <p id="competition-text-1" class="mktoText" mktoName="Competition Text 1">CrowdStrike’s Threat Graph is the brains behind the CrowdStrike prevention platform. It provides complete real-time visibility and insight into everything happening on your endpoints throughout your environment.</p>
+                        <a href="${real-time-visibility}" target="_blank">Learn More</a>
+                    </div>
+
+                    <div class="col-6">
+                         <img id="competition-img-2" class="mktoImg" mktoName="Competition Image 2" src="https://go.crowdstrike.com/rs/281-OBQ-266/images/single-agent.png" alt="2. A Single Agent">
+                        <h3 id="competition-heading-2" class="mktoText" mktoName="Competition Heading 2">2. A Single Agent</h3>
+                        <p id="competition-text-2" class="mktoText" mktoName="Competition Text 2">An intelligent, lightweight agent unlike any other. It blocks attacks — both malware and malware-free — while capturing and recording endpoint activity.</p>
+                        <a href="${a-single-agent}" target="_blank">Learn More</a>
+                    </div>
+
+                    <div class="col-6">
+                         <img id="competition-img-3" class="mktoImg" mktoName="Competition Image 3" src="https://go.crowdstrike.com/rs/281-OBQ-266/images/cloud-native.png" alt="3. Cloud Native">
+                        <h3 id="competition-heading-3" class="mktoText" mktoName="Competition Heading 3">3. Cloud Native</h3>
+                        <p id="competition-text-3" class="mktoText" mktoName="Competition Text 3">Eliminates complexity and simplifies deployment to drive down operational costs</p>
+                        <a href="${cloud-native}" target="_blank">Learn More</a>
+                    </div>
+
+                    <div class="col-6">
+                         <img id="competition-img-4" class="mktoImg" mktoName="Competition Image 4" src="https://go.crowdstrike.com/rs/281-OBQ-266/images/modularity.png" alt="4. Modularity">
+                        <h3 id="competition-heading-4" class="mktoText" mktoName="Competition Heading 4">4. Modularity</h3>
+                        <p id="competition-text-4" class="mktoText" mktoName="Competition Text 4">Falcon is designed as an extensible solution that ensures that new security countermeasures can be added to the platform seamlessly and without the need to re-architect or re-engineer the solution.</p>
+                        <a href="${modularity}" target="_blank">Learn More</a>
+                    </div>
+
+                    <div class="col-6">
+                         <img id="competition-img-5" class="mktoImg" mktoName="Competition Image 5" src="https://go.crowdstrike.com/rs/281-OBQ-266/images/world-class-intelligence.png" alt="5. World Class Intelligence">
+                        <h3 id="competition-heading-5" class="mktoText" mktoName="Competition Heading 5">5. World Class Intelligence</h3>
+                        <p id="competition-text-5" class="mktoText" mktoName="Competition Text 5">All cloud data is enriched with threat intelligence to provide a full picture of attacks and the context needed to pivot to a proactive security posture.</p>
+                        <a href="${world-class-intelligence}" target="_blank">Learn More</a>
+                    </div>
+
+                    <div class="col-6">
+                         <img id="competition-img-6" class="mktoImg" mktoName="Competition Image 6" src="https://go.crowdstrike.com/rs/281-OBQ-266/images/threat-hunting.png" alt="6. 24/7 Threat Hunting">
+                        <h3 id="competition-heading-6" class="mktoText" mktoName="Competition Heading 6">6. 24/7 Threat Hunting</h3>
+                        <p id="competition-text-6" class="mktoText" mktoName="Competition Text 6">Falcon OverWatch proactively searches for threats on our customers behalf. An elite team of threat hunters works 24/7 as an additional layer of protection to catch what other solutions miss.</p>
+                        <a href="${threat-hunting}" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="full-text-top" style="display: ${money-save};">
+        <div class="container">
+          <div class="row">
+            <div class="col-8">
+            <h2 id="money-save-heading" class="mktoText" mktoName="Money Save Heading">How Much Money Can you Save with CrowdStrike? </h2>
+            <p id="money-save-sub-heading" class="mktoText" mktoName="Money Save Sub Heading">A Total Economic Impact (TEI) report commissioned by CrowdStrike found that the Falcon Platform could generate cumulative savings of $6.7 million representing an estimated 316% ROI with payback in less than three months. The report outlines how CrowdStrike reduces technical complexities, increases organizational agility, and boosts workforce efficiency.</p>
+            <a href="${read-the-report-link}" target="_blank">${read-the-report-text}</a>
+            </div>
+            <div class="col-4">
+            	<img class="mktoImg" id="much-money" mktoName="Much Money" src="https://go.crowdstrike.com/rs/281-OBQ-266/images/2019-total-economic-impact-study-cover-page.jpg" alt="The Total Economic Impact">
+              <a href="${read-the-report-link}" target="_blank">${read-the-report-text}</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="full-text-bottom" style="display: ${yourself};">
+        <div class="container">
+            <h2 id="yourself-heading" class="mktoText" mktoName="Yourself Heading">Ready to Try CrowdStrike for Yourself?</h2>
+            <p id="yourself-sub-heading" class="mktoText" mktoName="Yourself Sub Heading">Get access to the Falcon platform and see for yourself why organizations choose CrowdStrike over the competition.</p>
+            <a href="javascript:void(0)" onclick="goToByScroll('${start-free-trial-link}')">${start-free-trial-text}</a>
+        </div>
+    </section>
+  
+  <!-- Footer -->
+    <footer class="footer-main">
+        <div class="container">
+            <div class="footer-upper d-md-flex align-items-md-center justify-content-md-between">
+                <a href="//www.crowdstrike.com/" class="footer-logo">
+                    <img src="//go.crowdstrike.com/rs/281-OBQ-266/images/crowd-strike-logo-white.svg" alt="CrowdStrike" />
+                </a>
+                <ul class="social-icon d-none d-md-block">
+                    <li class="socialTwitter"><a href="${twitterLink}" id="socialTwitterLink"><i class="fa fa-twitter"></i>
+                            [twitter.com]</a></li>
+                    <li class="socialFacebook"><a href="${facebookLink}" id="socialFacebookLink"><i
+                                class="fa fa-facebook"></i> [facebook.com]</a></li>
+                    <li class="socialLinkedIn"><a href="${linkedInLink}" id="socialLinkedInLink"><i
+                                class="fa fa-linkedin"></i> [linkedin.com]</a></li>
+                    <li class="socialYoutube"><a href="${youtubeLink}" id="socialYoutubeLink"><i
+                                class="fa fa-youtube-play"></i> [youtube.com]</a></li>
+                </ul>
+            </div>
+            <div class="footer-lower d-md-flex align-items-md-center justify-content-md-between">
+                <ul>
+                    <li id="copyright" class="mktoText" mktoName="Copyright Text">Copyright 2020 CrowdStrike</li>
+                    <li id="link-privacy"><a href="${privacyLink}" id="footer-privacy-link" class="mktoText"
+                            mktoName="Footer Privacy Link">Privacy</a></li>
+                    <li id="link-contactUs"><a href="${contactUsLink}" id="footer-contactUs-link" class="mktoText"
+                            mktoName="Footer Contact-us Link">Contact Us</a></li>
+                    <li id="link-tel" class="mktoText" mktoName="Footer Telephone" x-ms-format-detection="none">
+                        1.888.512.8906</li>
+                </ul>
+                <ul class="social-icon d-block d-md-none d-flex justify-content-between">
+                    <li class="socialTwitter"><a href="${twitterLink}" id="socialTwitterLink"><i class="fa fa-twitter"></i>
+                            [twitter.com]</a></li>
+                    <li class="socialFacebook"><a href="${facebookLink}" id="socialFacebookLink"><i
+                                class="fa fa-facebook"></i> [facebook.com]</a></li>
+                    <li class="socialLinkedIn"><a href="${linkedInLink}" id="socialLinkedInLink"><i
+                                class="fa fa-linkedin"></i> [linkedin.com]</a></li>
+                    <li class="socialYoutube"><a href="${youtubeLink}" id="socialYoutubeLink"><i
+                                class="fa fa-youtube-play"></i> [youtube.com]</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        // Cookie Code
+        var cookieName = 'LP_Registration_SP_Try_Falcon_Prevent';
+        var cookieValue = '1';
+        var myDate = new Date();
+        myDate.setDate(myDate.getDate() + 30);
+        document.cookie = cookieName +"=" + cookieValue + ";expires=" + myDate;
+        // End - Cookie Code
+        var cs_jQuery = $;
+        var clamp_count = 0;
+        (function ($) {
+            $(document).ready(function () { 
+                 // Language Dropdown
+                $(".dropdown-menu a").click(function () {
+                    $(".btn:first-child").text($(this).text());
+                    $(".btn:first-child").val($(this).text());
+                });
+            });
+
+        })(cs_jQuery);
+
+        jQuery(document).ready(function(){
+ if(navigator.userAgent.indexOf('Mac') > 0){
+  jQuery('body').addClass('mac-os');
+ } else {
+  jQuery("body").addClass("pc");
+ }
+});
+        jQuery(document).ready(function(){
+    / Get browser /
+    // jQuery.browser.chrome = /chrome/.test(navigator.userAgent.toLowerCase());
+    var is_opera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+    var is_Edge = navigator.userAgent.indexOf("Edge") > -1;
+    var is_chrome = !!window.chrome && !is_opera && !is_Edge;
+    var is_explorer= typeof document !== 'undefined' && !!document.documentMode && !is_Edge;
+    var is_firefox = typeof window.InstallTrigger !== 'undefined';
+    var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    / Detect Chrome /
+    if(is_chrome){
+        jQuery('body').addClass('chrome');
+    }else if( /^((?!chrome|android).)*safari/i.test(navigator.userAgent)){
+        jQuery('body').addClass('safari');
+    }
+});
+    jQuery(document).ready(function(){
+        setTimeout(function(){
+            jQuery('.compare .col-four, .third-party .col-6 a,.full-text-top a,.full-text-bottom a').focus(function(){
+                jQuery(this).addClass('buttonhover');
+            }).blur(function(){
+                jQuery(this).removeClass('buttonhover');
+            });
+
+            jQuery('.compare .col-four').focusin(function(){
+                jQuery(this).addClass('buttonhover');
+            }).focusout(function(){
+                jQuery(this).removeClass('buttonhover');
+            });
+            jQuery('.third-party .col-6 a,.full-text-top a,.full-text-bottom a, .compare .col-four').mouseenter(function(){
+                jQuery('.third-party .col-6 a,.full-text-top a,.full-text-bottom a, .compare .col-four').removeClass('buttonhover');
+                jQuery(this).addClass('buttonhover');
+            })
+            jQuery('.third-party .col-6 a,.full-text-top a,.full-text-bottom a, .compare .col-four').mouseleave(function(){
+                jQuery(this).removeClass('buttonhover');
+            })
+            jQuery(document).on('click touch','.third-party .col-6 a,.full-text-top a,.full-text-bottom a, .compare .col-four',function(){
+                    jQuery(this).addClass('buttonhover');
+                    var curr = jQuery(this);
+                    setTimeout(function(){
+                        jQuery(curr).removeClass('buttonhover');
+                    },1000);
+                });
+        },1500);
+                
+    });
+      setTimeout(function(){
+         jQuery( ".col-four" ).each(function() {
+            if(jQuery(this).is(":visible") == false){
+                jQuery(this).remove();
+                window.dispatchEvent(new Event('resize'));
+            }
+        });     
+    },2500);
+ function goToByScroll(id){
+           jQuery('html,body').animate({scrollTop: jQuery(id).offset().top },500);   
+   }
+    </script>
+        <!-- Html code Block -->
+    <div id="html_block" mktoName="HTML block">
+        <div class="mktoText" id="html-code" mktoName="html-code"></div>
+    </div>
+    <!-- END Html code Block -->
+  </body>
+</html>
