@@ -1,0 +1,23 @@
+.spz_consulation_assessment #storeLocator__storeList .infobox__row.infobox__cta.ssflinks[href='/free-consultation']{
+	font-size: 0;
+	text-decoration: initial;
+}
+.spz_consulation_assessment #storeLocator__storeList .infobox__row.infobox__cta.ssflinks[href='/free-consultation']:before {
+	content: 'Free Assessment';
+	color: #CA994E;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 14px;
+}
+.spz_consulation_assessment #storeLocator__storeList .infobox__row.infobox__cta.ssflinks[href='/free-consultation']:hover::before {
+	color: #009490;
+}
+
+@media only screen and (max-width: 64em){
+	.spz_consulation_assessment #storeLocator__storeList .infobox__row.infobox__cta.ssflinks[href='/free-consultation']:before, .spz_consulation_assessment #storeLocator__storeList .infobox__row.infobox__cta.ssflinks[href='/free-consultation']:hover::before {
+		color: #ffffff;
+		text-decoration: initial;
+	}
+}
+
+
